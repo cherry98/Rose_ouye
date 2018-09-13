@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="109dp"
+    android:layout_height="109dp">
+
+    <ImageView
+        android:id="@+id/itemscreenimg_img1"
+        android:layout_width="109dp"
+        android:layout_height="109dp"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/itemscreenimg_view"
+        android:layout_width="109dp"
+        android:layout_height="109dp">
+
+        <ImageView
+            android:id="@+id/itemscreenimg_img2"
+            android:layout_width="29dp"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</FrameLayout>

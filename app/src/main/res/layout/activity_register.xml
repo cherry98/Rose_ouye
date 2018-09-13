@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/register_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="44dp"
+        android:background="@drawable/itemalltask_background"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="@string/register_password_text"
+            android:hint="@string/register_hint_item2"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="13sp" />
+
+
+        <CheckBox
+            android:id="@+id/mCbDisplayPassword"
+            style="@style/login_checkboxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:button="@null"
+            android:src="@mipmap/password_off" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_submit"
+        android:layout_width="260dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/viewdialogtasklocation1_bg"
+        android:text="@string/register_submit"
+        android:textColor="#ffffffff"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/register_checkbox"
+            style="@style/task_question_checkboxStyle1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/register_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:text="@string/register_protocol"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

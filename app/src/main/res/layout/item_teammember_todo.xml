@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/item_teammember_rightbg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/itemalltask_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/projectname2" />
+
+            <TextView
+                android:id="@+id/itemmyreward_pjname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="项目名称项目名称项目名称项目名称"
+                android:textColor="@color/homepage_city"
+                android:textSize="@dimen/app_textsize_normal1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_small" />
+
+                <TextView
+                    android:id="@+id/itemmyreward_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="60"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal" />
+
+                <TextView
+                    android:id="@+id/itemmyreward_yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_small"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/alltask_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/taskdetail_list_ico2" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@color/mycorps_line" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/itemmyreward_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="网点名称"
+                    android:textColor="#FF231916"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/itemmyreward_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="left|center_vertical"
+                    android:text="网点编号"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_small" />
+
+                <TextView
+                    android:id="@+id/itemmyreward_addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="left|center_vertical"
+                    android:text="北京市朝阳区建华南路"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_small" />
+
+                <TextView
+                    android:id="@+id/itemmyreward_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="2018-01-22 09:00 ~ 2018-02-02"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_small3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/itemmyreward_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:maxLength="4"
+                        android:text="李寻欢"
+                        android:textColor="#FF4A90E2"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/itemmyreward_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@mipmap/shenhe"
+                        android:drawablePadding="3dp"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="@color/homepage_select"
+                        android:textSize="@dimen/app_textsize_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/itemapplyone_runnow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dialog_upload1"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:text="立即执行"
+                        android:textColor="@color/app_background2"
+                        android:textSize="@dimen/app_textsize_small3"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/itemapplyone_accept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dialog_upload1"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:text="接受任务"
+                        android:textColor="@color/app_background2"
+                        android:textSize="@dimen/app_textsize_small3"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/itemprice_chat_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_bg"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/itemprice_chatname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="王志"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_small" />
+
+                <TextView
+                    android:id="@+id/itemprice_chattime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01-22 09:00"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/itemprice_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="不好意思，我最近不方便接这类任务。"
+                android:textColor="@color/homepage_city"
+                android:textSize="@dimen/app_textsize_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/item_teammember_del"
+        android:layout_width="@dimen/teammember_del_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/item_teammember_del_bg"
+        android:gravity="center"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:textSize="14sp"
+        android:visibility="visible" />
+</LinearLayout>

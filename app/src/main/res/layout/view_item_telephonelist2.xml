@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_background2"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_teleph_title"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/homepage_search"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="A"
+        android:textColor="@color/homepage_city"
+        android:textSize="@dimen/app_textsize_normal1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="5dp">
+
+        <com.orange.oy.view.CircularImageView
+            android:id="@+id/item_teleph_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_teleph_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="燕燕"
+                android:textColor="@color/homepage_city"
+                android:textSize="@dimen/app_textsize_small" />
+
+            <TextView
+                android:id="@+id/item_teleph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="18515140724"
+                android:textColor="@color/citycolors"
+                android:textSize="@dimen/app_textsize_normal1" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/citysearch3_checkbox"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/alltask_background" />
+</LinearLayout>

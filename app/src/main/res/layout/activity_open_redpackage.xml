@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_above="@+id/openredpackage_close"
+        android:background="@mipmap/bg_red_package"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2">
+
+            <TextView
+                android:id="@+id/openredpackage_money1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="35dp"
+                android:text="已领"
+                android:textColor="#D42526"
+                android:textSize="@dimen/app_textsize_normal1"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/openredpackage_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="55dp"
+                android:textColor="#D42526"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/openredpackage_money_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="红包由以下商户提供，\n请点击领取！"
+                android:textColor="#D42526"
+                android:textSize="14sp"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="47dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/openredpackage_listview1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_r_6_col_fffef3ba"
+                android:listSelector="@color/sobot_transparent"/>
+
+            <ListView
+                android:id="@+id/openredpackage_listview2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_r_6_col_fffef3ba"
+                android:listSelector="@color/sobot_transparent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/openredpackage_close"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/wdhb_button_guan"/>
+
+</RelativeLayout>

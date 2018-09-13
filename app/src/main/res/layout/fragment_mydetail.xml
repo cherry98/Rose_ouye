@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/my_bg_top"/>
+
+                <FrameLayout
+                    android:id="@+id/mydetail_img_layout"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/my_img_bg"
+                    android:padding="5dp">
+
+                    <com.orange.oy.view.CircularImageView
+                        android:id="@+id/mydetail_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"/>
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="15dp"
+                    android:layout_alignBottom="@+id/mydetail_img_layout"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="50dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/mydetail_task"/>
+
+                <EditText
+                    android:id="@+id/mydetail_item1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/mydetail_img_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:maxLength="20"
+                    android:text="asdfasd"
+                    android:textColor="@color/appp_titletext"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/app_textsize_normal"/>
+
+                <ImageView
+                    android:id="@+id/mydetail_item1_1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@+id/mydetail_item1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/mydetail_item1"
+                    android:src="@mipmap/mydetail_name"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="基础信息"
+                android:textColor="@color/colorPrimaryDark2"
+                android:textSize="@dimen/app_textsize_big"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_line"/>
+
+            <LinearLayout
+                android:id="@+id/mydetail_item2_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/app_background2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/mydetail_item3"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="@dimen/app_textsize_normal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/mydetail_item3_2"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="@dimen/app_textsize_normal"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/aboutus_ico3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/app_background2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/mydetail_item4"
+                    android:textColor="@color/colorPrimaryDark2"
+                    android:textSize="@dimen/app_textsize_normal"/>
+
+                <TextView
+                    android:id="@+id/mydetail_item3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="@dimen/app_textsize_normal"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_line"/>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:background="@color/app_background2"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingLeft="15dp">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:text="@string/mydetail_item5"-->
+                    <!--android:textColor="@color/colorPrimaryDark2"-->
+                    <!--android:textSize="@dimen/app_textsize_normal"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/mydetail_item4"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@null"-->
+                    <!--android:gravity="right|center_vertical"-->
+                    <!--android:textColor="@color/app_textcolor"-->
+                    <!--android:textSize="@dimen/app_textsize_normal"/>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:src="@mipmap/aboutus_ico3"/>-->
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/app_line"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/app_background2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/mydetail_item6"
+                    android:textColor="@color/colorPrimaryDark2"
+                    android:textSize="@dimen/app_textsize_normal"/>
+
+                <TextView
+                    android:id="@+id/mydetail_item5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="@dimen/app_textsize_normal"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/aboutus_ico3"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/app_background2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/mydetail_item7"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="@dimen/app_textsize_normal"/>
+
+                <TextView
+                    android:id="@+id/mydetail_item6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="@dimen/app_textsize_normal"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@mipmap/mydetail_item7_2"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/app_line"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

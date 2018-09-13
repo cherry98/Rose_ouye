@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_background2">
+
+    <LinearLayout
+        android:id="@+id/fragmentRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/bottomList_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottomList"
+        android:background="#ffEEEEEE"/>
+
+    <LinearLayout
+        android:id="@+id/bottomList"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/meau_square"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/square_img"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/meau_square"/>
+
+            <TextView
+                android:id="@+id/square_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/square_img"
+                android:layout_marginTop="5dp"
+                android:text="广场"
+                android:textColor="@color/homepage_select"
+                android:textSize="@dimen/app_textsize_small3"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/meau_task"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/task_img"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/meau_task2"/>
+
+            <TextView
+                android:id="@+id/task_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/task_img"
+                android:layout_marginTop="5dp"
+                android:text="任务"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/app_textsize_small3"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/meau_center"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="top"
+            android:layout_weight="0.4"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/meau_center_no"/>
+
+        <RelativeLayout
+            android:id="@+id/meau_shakephoto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/shakephoto_img"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/meau_shake_no"/>
+
+            <TextView
+                android:id="@+id/shakephoto_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shakephoto_img"
+                android:layout_marginTop="5dp"
+                android:text="酔吧"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/app_textsize_small3"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/meau_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/my_img"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/meau_my2"/>
+
+            <TextView
+                android:id="@+id/my_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_img"
+                android:layout_marginTop="5dp"
+                android:text="我的"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/app_textsize_small3"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.orange.oy.network.NetworkView
+        android:id="@+id/networkview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.orange.oy.view.StartloadingView
+        android:id="@+id/startloading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

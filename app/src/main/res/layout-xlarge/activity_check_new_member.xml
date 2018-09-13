@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background2"
+    android:orientation="vertical"
+    tools:context="com.orange.oy.activity.mycorps_314.CheckNewMemberActivity">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/titleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--<LinearLayout
+        android:id="@+id/lin_Nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/lin_Nodata_img"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/grrw_image" />
+
+        <TextView
+            android:id="@+id/lin_Nodata_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="很遗憾，您还没有待执行任务，\n快去广场领取任务吧！"
+            android:textColor="@color/homepage_city"
+            android:textSize="@dimen/app_textsize_normal1" />
+    </LinearLayout>-->
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/applylistview_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background2"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="7dp"
+        android:listSelector="@android:color/transparent"
+        android:padding="7dp"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrHeaderSubTextColor="@color/text_small_color"
+        ptr:ptrHeaderTextColor="@color/text_middle_color" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        
+    </LinearLayout>
+</LinearLayout>

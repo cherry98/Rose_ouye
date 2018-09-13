@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/itemalltask_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/projectname2" />
+
+        <TextView
+            android:id="@+id/itemmyreward_pjname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="项目名称项目名称项目名称项目名称"
+            android:textColor="@color/homepage_city"
+            android:textSize="@dimen/app_textsize_normal1" />
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@mipmap/grrw_icon_hb" />
+
+        <LinearLayout
+            android:id="@+id/lin_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥"
+                android:textColor="@color/homepage_city"
+                android:textSize="@dimen/app_textsize_small" />
+
+            <TextView
+                android:id="@+id/itemmyreward_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60"
+                android:textColor="@color/homepage_city"
+                android:textSize="@dimen/app_textsize_normal" />
+
+            <TextView
+                android:id="@+id/itemmyreward_yuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/homepage_city"
+                android:textSize="@dimen/app_textsize_small"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/alltask_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/itemmyreward_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="left"
+                    android:src="@mipmap/taskdetail_list_ico2" />
+
+                <TextView
+                    android:id="@+id/itemmyreward_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="网点名称"
+                    android:textColor="#535353"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/itemmyreward_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/itemmyreward_name"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="网点编号"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/app_textsize_small" />
+
+            <TextView
+                android:id="@+id/itemmyreward_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemmyreward_num"
+                android:layout_marginTop="5dp"
+                android:text="北京市朝阳区建华南路"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/app_textsize_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/itemmyreward_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@mipmap/shenhe"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/homepage_select"
+                android:textSize="@dimen/app_textsize_small" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/itemmyreward_abondon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/dialog_upload3"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:text="放弃"
+                    android:textColor="@color/homepage_select"
+                    android:textSize="@dimen/app_textsize_small3" />
+
+                <TextView
+                    android:id="@+id/itemmyreward_carry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dialog_upload1"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:text="重做"
+                    android:textColor="@color/appp_titletext"
+                    android:textSize="@dimen/app_textsize_small3" />
+
+                <TextView
+                    android:id="@+id/itemmyreward_Withdraw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dialog_upload1"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:text="提现"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_small3"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/itemmyreward_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemmyreward_addr"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:text="2018-01-22 09:00 ~ 2018-02-02"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_small3" />
+
+        <TextView
+            android:id="@+id/itemmyreward_checktime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="审核周期"
+            android:textColor="@color/makesure"
+            android:textSize="@dimen/app_textsize_small3"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/itemmyreward_layout"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/dutyfree_background"
+        android:orientation="horizontal"
+        android:paddingLeft="35dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="倒计时结束后仍未重新执行，则该任务无效"
+            android:textColor="#888888"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/itemmyreward_overtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/makesure"
+            android:textSize="@dimen/app_textsize_small3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/itemmyreward_fail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/itemmyreward_reasont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="未通过原因"
+            android:textColor="@color/makesure"
+            android:textSize="@dimen/app_textsize_small" />
+
+        <com.orange.oy.view.SpreadTextView
+            android:id="@+id/itemmyreward_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

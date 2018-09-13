@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/app_background2">
+
+        <TextView
+            android:id="@+id/itemessage2_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="活动主题名称"
+            android:textColor="@color/homepage_city"
+            android:textSize="@dimen/app_textsize_normal2" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/itemessage2_title"
+            android:layout_margin="10dp"
+            android:background="@color/alltask_background" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_below="@+id/view"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/taskdetail_list_ico2" />
+
+        <TextView
+            android:id="@+id/itemessage2_name"
+            style="@style/mycorps_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginLeft="35dp"
+            android:text="网点名称" />
+
+
+        <TextView
+            android:id="@+id/itemessage2_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemessage2_name"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:text="用户昵称：13894093598"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_normal1" />
+
+        <TextView
+            android:id="@+id/itemessage2_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemessage2_nickname"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:text="执行时间：2018.01.22  18:30:12"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_normal1" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/itemessage2_time"
+            android:layout_margin="10dp"
+            android:background="@color/alltask_background" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view2"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="查看详情"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_normal1" />
+    </RelativeLayout>
+</LinearLayout>

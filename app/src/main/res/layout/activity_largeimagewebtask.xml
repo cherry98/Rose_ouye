@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/limgwt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.orange.oy.view.CustomViewPager
+            android:id="@+id/limgwt_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"/>
+
+        <com.orange.oy.view.WebpageCommentView
+            android:id="@+id/limgwt_webpagecomment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/limgwt_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/app_background2"
+            android:gravity="center_vertical"
+            android:minHeight="60dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/limgwt_i1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/bg_circel_stroke_fff65d57"
+                android:padding="2.5dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/wbpgtk_i1"/>
+
+            <TextView
+                android:id="@+id/limgwt_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_r_3_stroke_fff3f3f3"
+                android:maxLines="3"
+                android:minHeight="32dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="7dp"
+                android:textColor="#a0a0a0"
+                android:textColorHint="#a0a0a0"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

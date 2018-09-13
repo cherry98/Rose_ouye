@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background2"
+    android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/locationlist_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单个位置执行次数"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <EditText
+                    android:id="@+id/locationlist_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入此任务可被领取执行的次数"
+                    android:inputType="number"
+                    android:textColor="#818181"
+                    android:textColorHint="#818181"
+                    android:textSize="@dimen/app_textsize_normal1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/homepage_search"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="位置列表"
+                android:textColor="@color/homepage_city" />
+
+            <com.orange.oy.view.MyListView
+                android:id="@+id/locationlist_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/locationlist_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/identitysure"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/app_background2"
+        android:textSize="@dimen/app_textsize_normal2" />
+</LinearLayout>

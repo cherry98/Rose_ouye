@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background2"
+    android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/editcontent_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="关键内容"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <TextView
+                    android:id="@+id/editcontent_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_normal1" />
+            </LinearLayout>
+
+            <com.orange.oy.view.TagsView
+                android:id="@+id/editcontent_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/editcontent_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/identitysure"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/app_background2"
+        android:textSize="@dimen/app_textsize_normal2" />
+</LinearLayout>

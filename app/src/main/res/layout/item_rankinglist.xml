@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/itemranking_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/homepage_city"
+        android:textSize="@dimen/app_textsize_normal2"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/itemalltask_background"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/itemranking_ranking"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_circel_col_d8d8d8"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/app_background2"
+            android:textSize="@dimen/app_textsize_normal1" />
+
+        <com.orange.oy.view.CircularImageView
+            android:id="@+id/itemranking_img"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/itemranking_name"
+            style="@style/mycorps_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:maxLength="8"
+            android:text="用户昵称" />
+
+        <TextView
+            android:id="@+id/itemranking_record"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="800赞、398评论"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_small" />
+
+        <ImageView
+            android:id="@+id/itemranking_img2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+</LinearLayout>

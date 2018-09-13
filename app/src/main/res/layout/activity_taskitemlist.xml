@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background2"
+              android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/taskitemlist_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/taskitemlist_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/app_new_line"/>
+
+    <LinearLayout
+        android:id="@+id/taskitemlist_package"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/taskitemlist_flagvv"/>
+
+        <TextView
+            android:id="@+id/taskitemlist_package_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/app_textsize_normal"/>
+
+        <TextView
+            android:id="@+id/taskitemlist_package_button"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/taskitemlist_button"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/app_textsize_normal"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/aboutus_ico3"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/taskitemlist_line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/app_new_line"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/taskitemlist_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="7dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrHeaderSubTextColor="@color/text_small_color"
+        ptr:ptrHeaderTextColor="@color/text_middle_color"/>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/app_background2"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/finish_task_bg1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/viewfdt_map_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/finish_task_bg_title"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/take_location"/>
+
+            <TextView
+                android:id="@+id/viewfdt_map_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:textColor="#ff231916"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/viewfdt_map_reset"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/taskitemlist_button"
+                android:gravity="center"
+                android:text="重做"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/app_textsize_normal"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/viewfdt_map_progressvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center_vertical"
+                android:textColor="#ffF65D57"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/viewfdt_map_right"
+                android:layout_width="14dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/text_spread"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/viewfdt_map_progress"
+            style="@style/ProgressBar_Mini"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_gravity="center_vertical"
+            android:max="100"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/viewfdt_map_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/finish_task_bg_title"
+            android:padding="15dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/viewfdt_map_img"
+                android:layout_width="match_parent"
+                android:layout_height="460dp"
+                android:layout_alignParentLeft="true"
+                android:background="@color/app_background"
+                android:scaleType="fitCenter"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

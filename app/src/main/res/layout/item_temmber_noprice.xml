@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/item_teammember_rightbg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/itemalltask_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@mipmap/taskdetail_list_ico2" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/mycorps_line" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/itemnoprice_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="北京汇星行"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/itemnoprice_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="S1SJ1198"
+                        android:textColor="@color/homepage_notselect"
+                        android:textSize="@dimen/app_textsize_small" />
+
+                    <TextView
+                        android:id="@+id/itemnoprice_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLength="3"
+                        android:text="自己"
+                        android:textColor="#4A90E2"
+                        android:textSize="@dimen/app_textsize_small" />
+
+                    <TextView
+                        android:id="@+id/itemnoprice_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@mipmap/grrw_icon_tab"
+                        android:text="待执行"
+                        android:textColor="@color/homepage_select"
+                        android:textSize="@dimen/app_textsize_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/itemnoprice_addr"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="北京市丰台区西四环中路83号"
+                        android:textColor="@color/homepage_notselect"
+                        android:textSize="@dimen/app_textsize_small" />
+
+                    <TextView
+                        android:id="@+id/itemnoprice_carry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/apply_background"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:paddingTop="4dp"
+                        android:text="立即执行"
+                        android:textColor="@color/app_background2"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/itemnoprice_accept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dialog_upload1"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:text="接受任务"
+                        android:textColor="@color/app_background2"
+                        android:textSize="@dimen/app_textsize_small3"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/itemnoprice_carrytime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="01-22 09:00 ~ 02-02 09:00可执行"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/itemnoprice_chat_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_bg"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/itemnoprice_chatname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="王志"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_small" />
+
+                <TextView
+                    android:id="@+id/itemnoprice_chattime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01-22 09:00"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/itemnoprice_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="不好意思，我最近不方便接这类任务。"
+                android:textColor="@color/homepage_city"
+                android:textSize="@dimen/app_textsize_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_teammember_del"
+        android:layout_width="@dimen/teammember_del_width"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/item_teammember_del_bg"
+        android:gravity="center"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:textSize="14sp"
+        android:visibility="visible" />
+</LinearLayout>

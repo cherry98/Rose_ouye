@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background2"
+    android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/obtaindutyfree_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.orange.oy.view.AppTitle>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/obtaindutyfree" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="推荐3位好友注册并绑定身份信息，\n将助您本月不受所得税困扰（好友额度正常使用）"
+                android:textColor="#ff0000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/app_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="请填写好友手机号码（最多可填写五个手机号码）：" />
+
+                <EditText
+                    android:id="@+id/obtaindutyfree_edit1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/feedback_edittext"
+                    android:hint="手机号1"
+                    android:textSize="@dimen/app_textsize_normal" />
+
+                <EditText
+                    android:id="@+id/obtaindutyfree_edit2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/feedback_edittext"
+                    android:hint="手机号2"
+                    android:textSize="@dimen/app_textsize_normal" />
+
+                <EditText
+                    android:id="@+id/obtaindutyfree_edit3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/feedback_edittext"
+                    android:hint="手机号3"
+                    android:textSize="@dimen/app_textsize_normal" />
+
+                <EditText
+                    android:id="@+id/obtaindutyfree_edit4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/feedback_edittext"
+                    android:hint="手机号4"
+                    android:textSize="@dimen/app_textsize_normal" />
+
+                <EditText
+                    android:id="@+id/obtaindutyfree_edit5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/feedback_edittext"
+                    android:hint="手机号5"
+                    android:textSize="@dimen/app_textsize_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/remind" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您推荐的好友成功注册并验证真实身份信息后\n您的提现额度将自动解锁" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/obtaindutyfree_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@mipmap/bottom_button"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/makesure"
+        android:textSize="@dimen/app_textsize_big" />
+</LinearLayout>
+

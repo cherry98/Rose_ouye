@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <!-- 整体透明画布 -->
+        <SurfaceView
+            android:id="@+id/winpreview_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!-- 扫描取景框 -->
+        <com.karics.library.zxing.view.ViewfinderView
+            android:id="@+id/winviewfinder_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/wincapturefinish_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:background="#ffffffff">
+
+        <Button
+            android:id="@+id/wincapturefinish_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/bottom_button"
+            android:text="取消"
+            android:textColor="@color/makesure"
+            android:textSize="@dimen/app_textsize_normal"/>
+    </RelativeLayout>
+</LinearLayout>

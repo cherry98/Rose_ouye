@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <solid android:color="@color/homepage_select" />
+
+            <stroke
+                android:width="0.7dp"
+                android:color="@color/homepage_select" />
+            <corners android:radius="360dp" />
+            <size
+                android:width="20dp"
+                android:height="20dp" />
+        </shape>
+    </item>
+
+</layer-list>

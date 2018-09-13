@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background2"
+    android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/scantaskreset_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/scantaskreset_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/scantaskreset_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="任务名称"
+                android:textColor="@color/dialogupload_title"
+                android:textSize="@dimen/app_textsize_normal2" />
+
+            <TextView
+                android:id="@+id/scantaskreset_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="任务说明"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/task_desc_textsize"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/alltask_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/scantaskreset_sccuess"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="成功扫码"
+                    android:textColor="@color/homepage_select"
+                    android:textSize="@dimen/app_textsize_normal2" />
+
+                <TextView
+                    android:id="@+id/scantaskreset_unsccuess"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="未成功扫码"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_normal2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/scantaskreset_sccuessview"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_weight="1"
+                    android:background="@color/homepage_select" />
+
+                <View
+                    android:id="@+id/scantaskreset_unsccuessview"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_weight="1"
+                    android:background="@color/homepage_select"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/homepage_notselect" />
+
+            <TextView
+                android:id="@+id/scantaskreset_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="成功扫码的商品列表："
+                android:textColor="@color/homepage_city"
+                android:textSize="@dimen/app_textsize_normal1" />
+
+            <com.orange.oy.view.MyListView
+                android:id="@+id/scantaskreset_listview1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10dp"
+                android:scrollbars="none"></com.orange.oy.view.MyListView>
+
+            <com.orange.oy.view.MyListView
+                android:id="@+id/scantaskreset_listview2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10dp"
+                android:scrollbars="none"
+                android:visibility="gone"></com.orange.oy.view.MyListView>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/scantaskreset_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/identitysure"
+        android:gravity="center"
+        android:text="提交"
+        android:visibility="gone"
+        android:textColor="@color/app_background2"
+        android:textSize="@dimen/app_textsize_normal2" />
+</LinearLayout>

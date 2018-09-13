@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_taskitem_edit_reset"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background2"
+              android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/taskitemedit_title_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/taskitemedit_name_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="17dp"
+                android:textColor="#333333"
+                android:textSize="17sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="14dp"
+                android:background="@color/app_line"/>
+
+            <TextView
+                android:id="@+id/taskitemedit_type_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_textcolor"
+                android:textSize="175sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/taskitemedit_progressbar_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/progressbar_reset"
+                        style="@style/ProgressBar_Mini_Reset"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/ouye_progressbarmargin"
+                        android:layout_marginRight="@dimen/ouye_progressbarmargin"
+                        android:max="100"/>
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:src="@mipmap/taskitemedit_jiedian"/>
+
+                    <ImageView
+                        android:id="@+id/progressbar_jiedian2_reset"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/taskitemedit_jiedian"/>
+
+                    <ImageView
+                        android:id="@+id/progressbar_jiedian3_reset"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:src="@mipmap/taskitemedit_jiedian"/>
+
+                    <ImageView
+                        android:id="@+id/progressbar_biaoshi_reset"
+                        android:layout_width="@dimen/ouye_progressbarbiaoshi"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/progressbar_jiedian3_reset"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginTop="8dp"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/taskitemedit_jindubiaoshi"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/taskitemedit_questionlayout_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/taskitemedit_button_reset"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#ffF65D57"
+        android:gravity="center"
+        android:text="上传"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+</LinearLayout>

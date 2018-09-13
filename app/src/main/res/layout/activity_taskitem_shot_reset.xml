@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_taskitem_shot_reset"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background2"
+              android:orientation="vertical"
+              tools:context="com.orange.oy.activity.TaskitemShotResetActivity">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/taskitemshot_title_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/taskitemshot_button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/bottom_button"
+        android:text="重做"
+        android:textColor="@color/makesure"
+        android:textSize="@dimen/app_textsize_normal"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/taskitemshot_name_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="17dp"
+                android:textColor="#333333"
+                android:textSize="17sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="14dp"
+                android:background="@color/app_line"/>
+
+            <TextView
+                android:id="@+id/taskitemshot_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="#A0A0A0"
+                android:textSize="@dimen/task_desc_textsize"/>
+
+            <TextView
+                android:id="@+id/taskitemshot_video_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="请根据以下进行视频拍摄"
+                android:textColor="@color/app_textcolor"
+                android:textSize="@dimen/app_textsize_normal"/>
+
+            <RelativeLayout
+                android:id="@+id/taskitemshot_video_layout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="14dp">
+
+                <ImageView
+                    android:id="@+id/taskitemshot_shotimg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#000000"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:id="@+id/taskitemshot_shot_play"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_alignEnd="@+id/taskitemshot_shotimg"
+                    android:layout_alignRight="@+id/taskitemshot_shotimg"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:background="@drawable/taskitemshotill_start_bg"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/taskitemshotill_start"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/spread_button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/spread_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/spread_button_down"/>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/finish_task_bg1">
+
+                <com.orange.oy.view.MyVideoView
+                    android:id="@+id/viewfdt_shot_videoview"
+                    android:layout_width="300dp"
+                    android:layout_height="180dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="15dp"/>
+
+                <com.orange.oy.view.MyMediaController
+                    android:id="@+id/viewfdt_shot_mediacontroller"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="15dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/viewfdt_shot_video4"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="15dp"
+                    android:background="@color/app_background"
+                    android:scaleType="centerCrop"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:id="@+id/taskitmshotill_shotplay_reset"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/taskitemshotill_start_bg"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/taskitemshotill_start"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="拍摄备注:"
+                android:textColor="@color/app_textcolor"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/taskitemshot_text_reset"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/unify_input"
+                android:gravity="top|left"
+                android:hint="Notes"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

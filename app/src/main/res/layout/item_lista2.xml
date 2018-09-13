@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/app_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.orange.oy.view.RecodePlayView
+            android:id="@+id/iv_recodeplayview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/app_background2"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_control"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="18dp"
+                android:src="@mipmap/grrw_icon_tab" />
+
+            <SeekBar
+                android:id="@+id/MusicSeekBar"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="4"
+                android:focusable="true"
+                android:maxHeight="4.0dip"
+                android:minHeight="4.0dip"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progressDrawable="@drawable/po_seekbar"
+                android:thumb="@drawable/seekbar_thumb"
+
+                />
+
+            <TextView
+                android:id="@+id/MusicTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.3"
+                android:gravity="center"
+                android:text="  00:00  "
+                android:textColor="@color/makesure" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9" />
+
+        <TextView
+            android:id="@+id/itemmp_del"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_upload3"
+            android:gravity="center"
+            android:padding="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="删除"
+            android:textColor="@color/homepage_select"
+            android:textSize="@dimen/app_textsize_small3"
+            android:visibility="gone" />
+
+        <TextView
+
+            android:id="@+id/itemmp_reply"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_upload1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="重做"
+            android:textColor="@color/appp_titletext"
+            android:textSize="@dimen/app_textsize_small3"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

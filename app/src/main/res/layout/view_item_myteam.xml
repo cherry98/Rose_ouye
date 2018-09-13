@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_background2"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_myteam_title"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#fff7f7f7"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="A"
+        android:textColor="@color/app_textcolor"
+        android:textSize="@dimen/app_textsize_normal"
+        android:visibility="gone" />
+
+    <!--<View-->
+    <!--android:id="@+id/item_myteam_line"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/myteam_search_bg" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <com.orange.oy.view.CircularImageView
+            android:id="@+id/item_myteam_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/item_myteam_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="北京"
+            android:textColor="#989898"
+            android:textSize="@dimen/app_textsize_normal" />
+    </LinearLayout>
+
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:background="@color/myteam_search_bg"/>-->
+</LinearLayout>

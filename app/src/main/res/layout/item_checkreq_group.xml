@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/app_background"
+              android:orientation="vertical">
+
+    <View
+        android:id="@+id/item_checkreq_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_line"/>
+
+    <LinearLayout
+        android:id="@+id/item_checkreq_itemtitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_background2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/item_checkreq_left"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/task_package"/>
+
+        <TextView
+            android:id="@+id/item_checkreq_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/app_textcolor"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/item_checkreq_right"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/small_ico_down"/>
+
+        <ImageView
+            android:id="@+id/item_checkreq_switch"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/switch_on"/>
+
+        <TextView
+            android:id="@+id/item_checkreq_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_checkreq_button"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:text="开始"
+            android:textColor="#ffffffff"
+            android:textSize="13sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/item_checkreq_line4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_line"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/item_checkreq_childrens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background2"
+        android:orientation="vertical"
+        android:visibility="gone"></LinearLayout>
+
+    <View
+        android:id="@+id/item_checkreq_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_line"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/item_checkreq_line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/app_line"/>
+</LinearLayout>

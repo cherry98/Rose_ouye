@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="@dimen/dialog_margin"
+    android:layout_marginRight="@dimen/dialog_margin"
+    android:background="@drawable/dialog_upload"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/itemupload_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/upload_prompt"
+        android:textColor="@color/dialogupload_title"
+        android:textSize="@dimen/app_textsize_normal2"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/itemupload_prompts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/dialogupload_title"
+        android:textSize="@dimen/app_textsize_normal1"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/itemupload_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dialog_upload1"
+        android:gravity="center"
+        android:text="@string/upload_str1"
+        android:textColor="@color/app_background2"
+        android:textSize="@dimen/app_textsize_normal1" />
+
+    <TextView
+        android:id="@+id/itemupload_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dialog_upload2"
+        android:gravity="center"
+        android:text="@string/upload_str2"
+        android:textColor="@color/homepage_notselect"
+        android:textSize="@dimen/app_textsize_normal1" />
+
+    <TextView
+        android:id="@+id/itemupload_thrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dialog_upload2"
+        android:gravity="center"
+        android:paddingBottom="7dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="7dp"
+        android:text="@string/upload_str3"
+        android:textColor="@color/homepage_notselect"
+        android:textSize="@dimen/app_textsize_normal1" />
+
+</LinearLayout>

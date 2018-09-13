@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/app_background2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/searchhistory_item_height"
+        android:layout_marginBottom="@dimen/searchhistory_item_marbottome"
+        android:background="@drawable/search_item_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/line"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/search_item_left_ico"/>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="60dp"
+            android:background="#ffececec"/>
+
+        <TextView
+            android:id="@+id/itemsearch_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/itemsearch_money"
+            android:singleLine="true"
+            android:textColor="#ff231916"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/itemsearch_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffF65D57"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/itemsearch_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line"
+            android:layout_below="@+id/itemsearch_title"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#ffA0A0A0"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/itemsearch_button"
+            android:layout_width="60dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/itemsearch_money"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/item_search_bg"
+            android:gravity="center"
+            android:text="立即申请"
+            android:textColor="#ffffffff"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/itemsearch_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="14dp"
+            android:textColor="#ffA0A0A0"
+            android:textSize="10sp"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/recruitmentorder_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:id="@+id/recruitmentorder_topimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="#33000000"/>
+
+        <TextView
+            android:id="@+id/recruitmentorder_toptext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/recruitmentorder_text"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:singleLine="true"
+            android:text="黑体"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/app_textsize_big"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/recruitmentorder_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:text="黑体"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/app_textsize_normal"/>
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/recruitmentorder_webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/recruitmentorder_button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/login_button"
+        android:gravity="center"
+        android:text="我要参加"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/app_textsize_big"/>
+</LinearLayout>

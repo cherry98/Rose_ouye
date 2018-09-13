@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/itemeditprice_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/itemalltask_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/taskdetail_list_ico2" />
+
+                <TextView
+                    android:id="@+id/itemeditprice_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/itemeditprice_plus"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:src="@mipmap/price_plus2" />
+
+                <TextView
+                    android:id="@+id/itemeditprice_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/homepage_select"
+                    android:textSize="@dimen/app_textsize_normal" />
+
+                <ImageView
+                    android:id="@+id/itemeditprice_minus"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/price_minus" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/mycorps_line" />
+
+            <TextView
+                android:id="@+id/itemeditprice_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/app_textsize_small" />
+
+            <TextView
+                android:id="@+id/itemeditprice_addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/app_textsize_small" />
+
+            <TextView
+                android:id="@+id/itemeditprice_carrytime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

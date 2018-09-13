@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background2"
+    android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/collecttheme_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mycorps_line" />
+
+            <LinearLayout
+                android:id="@+id/collecttheme_classify_ly"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="主题分类"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <TextView
+                    android:id="@+id/collecttheme_classify"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:hint="请选择主题分类"
+                    android:textColor="@color/homepage_notselect"
+                    android:textColorHint="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/aboutus_ico3" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mycorps_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="主题名称"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <EditText
+                    android:id="@+id/collecttheme_theme"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right|center"
+                    android:hint="请输入活动主题"
+                    android:maxLength="10"
+                    android:textColor="@color/homepage_notselect"
+                    android:textColorHint="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_normal1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mycorps_line" />
+
+            <LinearLayout
+                android:id="@+id/lin_tags"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="主题标签样式"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <TextView
+                    android:id="@+id/tv_tags"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:textColor="@color/homepage_notselect"
+                    android:textColorHint="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/aboutus_ico3"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+
+            <com.orange.oy.view.HorizontalListView
+                android:id="@+id/horizontalListView"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:divider="#00000000"
+                android:dividerHeight="5dp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/mycorps_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:minHeight="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="关键内容"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <TextView
+                    android:id="@+id/collecttheme_tagsnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/10"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_normal1" />
+            </LinearLayout>
+
+            <com.orange.oy.view.TagsView
+                android:id="@+id/collecttheme_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/collecttheme_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/identitysure"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/app_background2" />
+</LinearLayout>

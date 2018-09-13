@@ -1,0 +1,315 @@
+<resources>
+    <string name="app_name">偶业</string>
+    <string name="app_cachedir">OY</string>
+    <string name="app_back_message">再次点击退出</string>
+    <string name="app_back">返回</string>
+    <string name="open_failed">打开文件失败</string>
+    <string name="sdcardsize">您的内部存储卡剩余空间已不足50M，继续进行任务可能会导致执行失败，请清理下您卡的空间再进行任务！</string>
+    <!--网络访问-->
+    <string name="network_error">数据错误</string>
+    <string name="network_volleyerror">数据获取失败，请检查网络！</string>
+    <string name="network_dialog_message">正在加载&#8230;</string>
+    <string name="network_batch_error">版本数据异常，请尝试重新打开此页</string>
+    <string name="network_slow">网络速度较慢，\n服务器正在努力奔跑中……</string>
+    <string name="network_fail">网络连接中断，\n请检查下您的网络吧！</string>
+    <!--未登录-->
+    <string name="nologin">亲，您还未登录，请登录以后进行操作</string>
+    <!--错误-->
+    <string name="batch_error">批次号获取失败！无法上传！请重试</string>
+    <!--listview-->
+    <string name="listview_down">向下拉刷新&#8230;</string>
+    <string name="listview_down2">松开更新&#8230;</string>
+    <string name="listview_refush">正在加载&#8230;</string>
+    <!--Dialog-->
+    <string name="dialog_confirm_yes">确定</string>
+    <string name="dialog_confirm_no">取消</string>
+    <!--定位-->
+    <string name="location_fail">定位失败</string>
+    <string name="location_fail2">没有获取到您的位置</string>
+    <string name="location_fail3">没有定位到选择的城市</string>
+    <!--key-->
+    <string name="wx_appid">wx3360e320aef00538</string>
+    <string name="wx_appsecret">127c1be79b70a2d7d2be55573f210107</string>
+    <string name="qq_appid">1106044214</string>
+    <string name="qq_appkey">UdTwoFWFDntSc7Aj</string>
+    <!--星期-->
+    <string name="week_1">一</string>
+    <string name="week_2">二</string>
+    <string name="week_3">三</string>
+    <string name="week_4">四</string>
+    <string name="week_5">五</string>
+    <string name="week_6">六</string>
+    <string name="week_7">日</string>
+    <!--登录页-->
+    <string name="login_showmsg">SaiNuo</string>
+    <string name="login_remember">记住密码</string>
+    <string name="login_buttonmsg">登录</string>
+    <string name="fragment_task">任务</string>
+    <string name="fragment_standard">考核标准</string>
+    <string name="login_register">立即注册</string>
+    <string name="login_forgetpw">忘记密码</string>
+    <string name="login_dialog_message">正在登录&#8230;</string>
+    <!--注册页-->
+    <string name="register">密码设置</string>
+    <string name="register_item1">手机号</string>
+    <string name="register_item2">帐号密码</string>
+    <string name="register_item3">邀&#160;&#160;请&#160;&#160;码</string>
+    <string name="register_item4">验&#160;&#160;证&#160;&#160;码</string>
+    <string name="register_getcaptcha">获取验证码</string>
+    <string name="register_item5">已阅读并同意</string>
+    <string name="register_protocol">已阅读并同意《用户使用及保密协议》</string>
+    <string name="register_submit">注册</string>
+    <string name="register_hint_item1">请输入手机号</string>
+    <!--<string name="register_hint_item2">请输入密码（6&#8211;16位，数字字母组合）</string>-->
+    <string name="register_hint_item2">请输入密码</string>
+    <string name="register_hint_item3">邀请码（非必填）</string>
+    <string name="register_hint_item4">请输入验证码</string>
+    <string name="register_check_mobile">手机号码错误</string>
+    <string name="register_check_mobile2">账号不能为空，请您输入手机账号</string>
+    <string name="register_check_pw">请设置大于6位的密码</string>
+    <string name="register_check_captcha">请输入验证码</string>
+    <string name="register_check_agree">如果同意用户协议请打勾</string>
+    <string name="register_password_text">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="register_toast">注册成功</string>
+    <!--忘记密码-->
+    <string name="forgetpw">忘记密码</string>
+    <string name="forgetpw_newpw">新&#160;&#160;密&#160;&#160;码</string>
+    <string name="forgetpw_submit">修改密码</string>
+    <string name="forgetpw_toast">密码修改成功</string>
+    <!--发现页-->
+    <string name="find">发现</string>
+    <string name="find_hint_search">请输入搜索信息</string>
+    <string name="find_hint_citysearch">请输入地名</string>
+    <string name="feedback_search">请输入您要查询的信息</string>
+    <string name="find_login">登录</string>
+    <string name="find_city">城市</string>
+    <string name="find_tab_left">动态信息</string>
+    <string name="find_tab_right">优惠信息</string>
+    <string name="find_error1">没有选择城市</string>
+    <!--城市搜索-->
+    <string name="citysearch_1">上海市</string>
+    <string name="citysearch_2">北京市</string>
+    <string name="citysearch_3">广州市</string>
+    <string name="citysearch_4">深圳市</string>
+    <string name="citysearch_5">武汉市</string>
+    <string name="citysearch_6">天津市</string>
+    <string name="citysearch_7">西安市</string>
+    <string name="citysearch_8">南京市</string>
+    <string name="citysearch_9">杭州市</string>
+    <string name="citysearch_10">成都市</string>
+    <string name="citysearch_11">重庆市</string>
+    <!--关于我们-->
+    <string name="aboutus">关于我们</string>
+    <string name="aboutus_updata">检查更新</string>
+    <!--问题反馈-->
+    <string name="feedback">帮助与反馈</string>
+    <string name="feedback_text">微信客服号：Tel17778025902\n我们期待听到您的声音，把最好的体验带给您！\n欢迎提出宝贵的意见和建议，您留下的每个字都将用来改善我们的软件。</string>
+    <string name="feedback_check1">问题反馈</string>
+    <string name="feedback_check2">建议</string>
+    <string name="feedback_check3">其他</string>
+    <string name="feedback_hint">请描述您的意见（500字以内）</string>
+    <string name="feedback_hint2">便于我们与您联系</string>
+    <string name="feedback_error">您还没有填写内容哦</string>
+    <!--我的-->
+    <string name="my">我的</string>
+    <string name="my_login">立即登录</string>
+    <string name="my_item1">我的团队</string>
+    <string name="my_item2">设置开启定位</string>
+    <string name="my_item3">关于我们</string>
+    <string name="my_item11">应用版本</string>
+    <string name="my_item7">任务上传进度</string>
+    <string name="my_item19">任务进度</string>
+    <string name="my_item20">我的奖励金1000</string>
+    <string name="my_item5">下载任务</string>
+    <string name="my_item4">帮助与反馈</string>
+    <string name="my_item8">邀请好友</string>
+    <string name="my_item6">代理申请</string>
+    <string name="my_item21">操作指南</string>
+    <string name="my_item9">清理缓存</string>
+    <string name="my_item10">流量统计</string>
+    <string name="my_item12">设置</string>
+    <string name="my_item13">完善个人信息>></string>
+    <string name="my_item14">设置上传网络环境</string>
+    <string name="my_item15">设备管理</string>
+    <string name="my_item16">我的支付宝</string>
+    <string name="my_item17">身份信息</string>>
+    <string name="my_item18">我的任务</string>
+    <string name="my_item22">资料自动上传</string>
+    <string name="my_item23">联系客服</string>
+    <string name="my_item24">邀请赚钱</string>
+    <string name="my_address_start">常住地：</string>
+    <string name="my_exitlogin">退出登录</string>
+    <!--代理申请-->
+    <string name="proxyapple">代理申请</string>
+    <string name="proxyapple_item1">&#8195;&#8195;姓名:</string>
+    <string name="proxyapple_item2">&#8195;&#8195;电话:</string>
+    <string name="proxyapple_item3">&#8195;&#8195;邮件:</string>
+    <string name="proxyapple_item4">&#8195;&#8195;QQ:</string>
+    <string name="proxyapple_item5">&#8195;&#8195;省份:</string>
+    <string name="proxyapple_item6">所在城市:</string>
+    <string name="proxyapple_button">提交申请</string>
+    <string name="proxyapple_error1">请填写姓名</string>
+    <string name="proxyapple_error2">请填写电话</string>
+    <string name="proxyapple_error4">请选择省份</string>
+    <string name="proxyapple_error5">请选择城市</string>
+    <string name="proxyapple_hint1">必填</string>
+    <!--邀请好友-->
+    <string name="invitefd">邀请好友</string>
+    <string name="projectjoin">我要参加</string>
+    <!--我的信息-->
+    <string name="mydetail">个人信息</string>
+    <string name="mydetail_item1">设置</string>
+    <string name="mydetail_item2">昵称</string>
+    <string name="mydetail_item3">密码</string>
+    <string name="mydetail_item3_2">修改</string>
+    <string name="mydetail_item4">手机号</string>
+    <string name="mydetail_item5">性别</string>
+    <string name="mydetail_item6">地区</string>
+    <string name="mydetail_item7">邀请码</string>
+    <!--修改密码-->
+    <string name="revisepw">修改密码</string>
+    <string name="revisepw_hint">新密码（6&#8211;16位，数字字母组合）</string>
+    <!--我的团队-->
+    <string name="myteam">我的团队</string>
+    <string name="myteam_newfriend">新的好友</string>
+    <!--新的好友-->
+    <string name="newfriends">新的好友</string>
+    <string name="newfriends_add">添加手机联系人</string>
+    <string name="newfriends_item_state1">接受</string>
+    <string name="newfriends_item_state2">已添加</string>
+    <!-- 手机通讯录-->
+    <string name="telephonelist">手机通讯录</string>
+    <string name="telephonelist_item_state1">添加</string>
+    <string name="telephonelist_item_state2">邀请</string>
+    <!--添加好友详情-->
+    <string name="addfriendsdetail">详细资料</string>
+    <string name="addfriendsdetail_item">设置备注名称</string>
+    <string name="addfriendsdetail_hint">备注名称</string>
+    <string name="addfriendsdetail_button">添加到团队</string>
+    <!--添加好友-->
+    <string name="addfriends">添加好友</string>
+    <!--登录验证-->
+    <string name="logincheck_item1">由于您在新设备上登录，需要验证您的手机号（%1$s）</string>
+    <string name="logincheck_item2">短信验证已发送，请填写验证码</string>
+    <string name="logincheck_item3">请输入验证码</string>
+    <string name="logincheck_item4">收不到验证码？</string>
+    <string name="logincheck_button1">通过短信验证身份</string>
+    <string name="logincheck_button2">提交</string>
+    <!--任务-->
+    <string name="task">任务</string>
+    <string name="task_list_item1">标准说明</string>
+    <string name="task_list_item2">网点列表</string>
+    <!--任务详情-->
+    <string name="taskdetail">查看任务</string>
+    <string name="taskdetail_tab1">待执行</string>
+    <string name="taskdetail_tab2">上传中</string>
+    <string name="taskdetail_tab3">上传成功</string>
+    <!--标准说明-->
+    <string name="taskILL">项目说明</string>
+    <string name="identityMy">个人认证</string>
+    <string name="teamInformation">战队信息</string>
+    <!--完成进度-->
+    <string name="taskschedule">完成进度</string>
+    <string name="taskschedule_item1">负责店铺总量：</string>
+    <string name="taskschedule_item2">执行完成数量：</string>
+    <string name="taskschedule_item3">资料回收数量：</string>
+    <!--完成进度详情-->
+    <string name="taskschdetail">进度详情</string>
+    <string name="taskschdetail_tab3">资料已回收</string>
+    <!--地图定位-->
+    <string name="taskitemmap_show">店铺编号：%1$s\n店铺名称：%2$s\n店铺地址：%3$s\nGPS坐标：经度：%4$s\n&#8195;&#8195;&#8195;&#8195;&#160;&#160;&#160;纬度：%5$s\n坐标地址：%6$s</string>
+    <string name="taskitemmap_show2">坐标地址：%1$s</string>
+    <!--消息页-->
+    <string name="message">消息中心</string>
+    <string name="message_tab1">系统消息</string>
+    <string name="message_tab2">广播</string>
+    <string name="message_tab3">常见问题</string>
+    <string name="message_delete">删除</string>
+    <string name="message_right_hint">&#8195;&#8195;解决方案:</string>
+    <string name="message_right_msg">&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;%1$s</string>
+    <!--日历-->
+    <string name="calendar">日历</string>
+    <string name="calendar_dialog_message">加载任务数据</string>
+    <string name="calendar_dialog_message2">加载任务列表</string>
+    <!--属性-->
+    <string name="attributeselect_item1">一级分类-活动类型</string>
+    <string name="attributeselect_item2">二级分类-执行周期</string>
+    <string name="attributeselect_item3">三级分类-活动车展</string>
+    <string name="attributeselect_left">取消执行</string>
+    <string name="attributeselect_right">确定执行</string>
+    <!--拍照任务详情-->
+    <string name="taskitemdetail_tab1">未执行</string>
+    <string name="taskitemdetail_tab2">已执行</string>
+    <!--扫码任务-->
+    <string name="msg_camera_framework_bug">摄像头调用异常，请重启手机</string>
+    <string name="button_ok">OK</string>
+    <string name="viewfinderview_status_text1">将二维码/条形码放入框内,即可自动扫描</string>
+    <string name="viewfinderview_status_text2">即可自动扫描</string>
+    <!--VR设备信息-->
+    <string name="connect_internet_title">将ZMER接入互联网</string>
+    <string name="identity_desc">身份证绑定说明：\n1、将手机竖屏拍摄身份证，确保能够将身份证上全部信息拍摄完整\n2、身份证上的所有信息清晰可见，必须能看清证件号\n3、照片需免冠，建议未化妆，手持证件人的五官清晰可见\n4、照片内容真实有效，不得做任何修改\n5、手指不可以遮挡身份证信息</string>
+    <string name="mydevice_alipay">绑定说明：\n1、此四项无法对应将导致无法提取任务奖励金\n2、若支付宝账号填写错误，请联系偶业客服（微信号：17072293227）协助修改\n3、项目执行后的所有报酬提现后均会按支付期限转入此支付宝账号<string name="mydevice_alipay2">绑定说明：\n1、请如实填写自己的支付宝账号\n2、支付宝账号绑定后，即可不进行修改\n3、项目执行后的所有报酬均会按期转入此支付宝账号</string>
+    </string>
+    <string name="mydevice_al">绑定说明：\n1、请如实填写自己的支付宝账号\n2、若支付宝账号填写错误，请自行修改即可\n3、项目执行后的所有报酬均会按期转入此支付宝账号</string>
+    <string name="mydevice_vr">绑定说明：\n1、查找并填写zmer设备上的SN号\n2、填写时请注意大小写以及数据的顺序\n3、填写的SN号需与zmer设备上的SN号完全一致，才可绑定成功\n4、设备绑定后，即不可进行解绑，如发现绑定错误，请联系督导></string>
+    <string name="vrdeviceill">尚未有设备连接该WiFi。\n操作以下步骤使设备与手机在同一WiFi环境：\n第一步：\n停留在偶业中的VR链接wifi页面，点击手机的“HOME”键，请将手机的WiFi连接到设备的热点：手机设置 -->  无线局域网 --> 查找和设备上SN号后三位相同的WiFi(只看WiFi后三位)连接 --> 输入设备上提供的密码）\n第二步：\n在偶业中的VR链接wifi页面下方，点击“WiFi列表”按钮【此页面加载时会有些慢，请耐心等待】，选择你要连接的WiFi，输入密码，等待页面提示，在执行其他操作【等待时间大约在1分钟左右】。\n【在连接过程中，设备会有2次声音提醒，2次声音均响过，方为链接成功】\n第三步：\n重复第一步操作\n（停留在偶业中的VR链接wifi页面，点击手机的“HOME”键，请将手机的WiFi连接到设备的热点：手机设置 -->  无线局域网 --> 查找和设备上SN号后三位相同的WiFi(只看WiFi后三位)连接 --> 输入设备上提供的密码））\n第四步：\n成功链接设备。点击设备状态，可查看当前WiFi下的设备状态。</string>
+    <!--我的账户-->
+    <string name="account_text1">当前账户余额</string>
+    <string name="account_text4">我的偶米</string>
+    <string name="account_text2">待付款总金额（元）</string>
+    <string name="account_text3">累计总金额（元）</string>
+    <!--<string name="account_money">¥ %1$s</string>-->
+    <string name="account_money">%1$s</string>
+    <string name="account_money2">已超过%1$s的用户</string>
+    <!--提现选择项目-->
+    <string name="selectproject_mind">注意：一次提现操作仅针对一个项目，\n您可一次性提取一个项目下所有网点的任务奖励金额。</string>
+    <string name="selectproject_item_detail">该项目下您共完成%1$s家网点</string>
+    <!--提现明细-->
+    <!--<string name="enchashmentdetail_money">-¥%1$s</string>-->
+    <string name="enchashmentdetail_money">-%1$s元</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_share">邀请小伙伴注册偶业，TA三个月内每完成一个任务，您将获得TA完成任务的5%偶米奖励。</string>
+    <string name="exchange_illustrate">1、100偶米=1元人民币\n2、仅支持整百偶米数的兑换\n3、偶米兑换将在7日内到账偶业现金账号，申请提现即可转至支付宝\n4、偶米的更多用途敬请期待\n5、若有疑问请联系偶业官方客服公众号：17072293227</string>
+    <!--RSA公钥-->
+    <string name="RSA">MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCPS9V4PsBw/PPF26wbjx0/o1x9npUxs8N+64hmwt8eSZxFLIqNkWeVmSbREAB4eBJyP+z0Rs9uaNboNf6XtuHzOLHR6l2re8gOIafaJQ5mDUkvM0wddZkrBrPF28uRKrXcPa8fOfJYSRkzcdiVvO9FKf+8jZI+xFUndb321t2UywIDAQAB</string>
+    <string name="pull_to_refresh">下拉即可刷新</string>
+    <string name="release_to_refresh">松开即可刷新</string>
+    <string name="refreshing">载入中请稍后</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="load_end">已全部加载完成</string>
+    <!--DataUploadDialog-->
+    <string name="upload_prompt">亲，当前任务资料还有很多呢，\n是否需要自动上传</string>
+    <string name="upload_str1">在当前页面继续等待</string>
+    <string name="upload_str2">仅此任务自动上传</string>
+    <string name="upload_str3">本店下所有任务自动上传</string>
+    <string name="upload_permisson">项目权限</string>
+    <string name="upload_permisson2">为了不影响您的利益，您可以为您的团队选择如下权限</string>
+    <string name="upload_permisson3">此项目价格对团员公开</string>
+    <string name="upload_permisson4">此项目价格对团员保密</string>
+    <string name="dutyfree_prompt"><Data><![CDATA[太棒了，本月您赚取的现金已超过<font color="#F55D57">800元</font>啦!]]></Data></string>
+    <!--搜索页-->
+    <string name="search_text">请输入要查询的任务名称</string>
+    <!--提现-->
+    <string name="dutyfreemethod_item1">超过800的部分，将缴纳20%的个人所得税。\n例：提现1000元，税费40元\n计算公式：(1000元-800元) X 0.2=40元/税费;\n税金在提现时自动抵扣(每月自动归零)</string>
+    <string name="task_publish">任务发布正在开发中，如果您想发布任务请到\nhttp://www.oyearn.com/\n偶业PC端发布！</string>
+    <!--友盟分享弹窗-->
+    <string name="um_weixin">微&#8195;信</string>
+    <string name="um_wxcircle">朋友圈</string>
+    <string name="um_wxmin">小程序</string>
+    <string name="um_sina">新浪微博</string>
+    <string name="um_qq">QQ</string>
+    <string name="um_qqzone">QQ空间</string>
+    <string name="icexplain_content">1、查看是否误设了短信拦截。\n2、若该号码欠费停机，建议您更换手机号码或者缴费后重新获取。\n3、如果是信号网络延迟，可稍后尝试重新获取。</string>
+    <string name="join_chat1"><Data><![CDATA[<font color="#F65D57">队长</font>回复<font color="#F65D57">我</font>]]></Data></string>
+    <string name="join_chat2"><Data><![CDATA[<font color="#F65D57">我</font>回复<font color="#F65D57">队长</font>]]></Data></string>
+    <string name="share_title">偶业APP，红包大放送，点击领取</string>
+
+    <string name="string_email">第一步\n填写邮箱。\n第二步\n1、去你填写的邮箱查收邮件并下载附件（Excel表）将您的电话输入到此表格内。\n2、点击邮件的超链接（蓝色字区域）上传Excel表。\n3、上传完成后去偶业APP确认上传完成。\n第三步\n回到偶业APP点击上方按钮确认上传完成。"</string>
+</resources>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background2"
+    android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/taskmould_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mycorps_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务名称"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <EditText
+                    android:id="@+id/taskmould_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right|center"
+                    android:hint="请输入任务名称"
+                    android:maxLength="15"
+                    android:textColor="@color/homepage_city"
+                    android:textColorHint="@color/homepage_notselect"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/app_textsize_normal1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mycorps_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务描述"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <EditText
+                    android:id="@+id/taskmould_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/unify_input"
+                    android:gravity="top|center_vertical"
+                    android:hint="请输入对任务执行的详细要求"
+                    android:maxLength="300"
+                    android:minHeight="90dp"
+                    android:textColor="@color/homepage_city"
+                    android:textColorHint="@color/homepage_notselect"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/app_textsize_small" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mycorps_line" />
+
+            <LinearLayout
+                android:id="@+id/taskmould_content_ly"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务内容"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <TextView
+                    android:id="@+id/taskmould_content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="请设置可执行的任务内容"
+                    android:textColor="@color/homepage_city"
+                    android:textColorHint="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/aboutus_ico3" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mycorps_line" />
+
+            <LinearLayout
+                android:id="@+id/taskmould_time_ly"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动起止日期"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <TextView
+                    android:id="@+id/taskmould_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="请设置任务起止日期"
+                    android:textColor="@color/homepage_city"
+                    android:textColorHint="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/aboutus_ico3" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mycorps_line" />
+
+            <LinearLayout
+                android:id="@+id/taskmould_location_ly"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="位置"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <TextView
+                    android:id="@+id/taskmould_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="请设置投放位置"
+                    android:textColor="@color/homepage_city"
+                    android:textColorHint="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/aboutus_ico3" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mycorps_line" />
+
+            <LinearLayout
+                android:id="@+id/taskmould_permission_ly"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="对谁可见"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <TextView
+                    android:id="@+id/taskmould_permission"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="全部"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/aboutus_ico3" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mycorps_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务发布方"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <RadioGroup
+                    android:id="@+id/taskmould_group"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/taskmould_radio1"
+                        style="@style/task_question_radiobuttonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="匿名"
+                        android:textColor="#818181" />
+
+                    <RadioButton
+                        android:id="@+id/taskmould_radio2"
+                        style="@style/task_question_radiobuttonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#818181" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mycorps_line" />
+
+            <LinearLayout
+                android:id="@+id/taskmould_prize_ly"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务奖励"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <TextView
+                    android:id="@+id/taskmould_prize"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="请设置任务的奖励方式"
+                    android:textColor="@color/homepage_city"
+                    android:textColorHint="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/aboutus_ico3" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mycorps_line" />
+
+            <TextView
+                android:id="@+id/taskmould_num"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/homepage_search"
+                android:gravity="center"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/app_textsize_normal1"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/taskmould_total_ly"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付总金额"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <TextView
+                    android:id="@+id/taskmould_total"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal2" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/taskmould_kefu"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/identitysure">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/kefu_white" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/taskmould_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/identitysure"
+            android:gravity="center"
+            android:text="支付"
+            android:textColor="@color/app_background2"
+            android:textSize="@dimen/app_textsize_normal2" />
+    </LinearLayout>
+</LinearLayout>

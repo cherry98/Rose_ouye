@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/offlinestore_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_background2"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/item_offlinestore_left_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/taskdetail_list_left_ico"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_offlinestore_code_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_above="@+id/item_offlinestore_topcenter"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/item_offlinestore_topcenter"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="网点编号"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:id="@+id/item_offlinestore_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/item_offlinestore_topcenter"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toLeftOf="@+id/item_offlinestore_topcenter"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="网点名称"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="17sp"/>
+
+                <View
+                    android:id="@+id/item_offlinestore_topcenter"
+                    android:layout_width="1px"
+                    android:layout_height="1px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="55dp"/>
+
+                <TextView
+                    android:id="@+id/item_offlinestore_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_above="@+id/item_offlinestore_topcenter"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/taskdetail_button"
+                    android:gravity="center"
+                    android:text="执行"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:id="@+id/item_offlinestore_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/offlines_success"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/app_new_line"/>
+
+        <TextView
+            android:id="@+id/item_offlinestore_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="详细地址"
+            android:textColor="@color/myteam_search_text"
+            android:textSize="@dimen/app_textsize_normal"/>
+
+        <TextView
+            android:id="@+id/item_offlinestore_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:text="访员账号"
+            android:textColor="@color/myteam_search_text"
+            android:textSize="@dimen/app_textsize_normal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/item_offlinestore_looktime_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:lineSpacingExtra="5dp"
+                android:text="可执行时间段"
+                android:textColor="@color/colorPrimaryDark2"
+                android:textSize="17sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/item_offlinestore_looktime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/item_offlinestore_looktime_top"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/myteam_search_text"
+                android:textSize="@dimen/app_textsize_normal"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_line"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_offlinestore_right"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="#ffff0000"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/app_textsize_big"/>
+</LinearLayout>

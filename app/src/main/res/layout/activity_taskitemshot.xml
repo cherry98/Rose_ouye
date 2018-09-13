@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background2"
+    android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/taskitemshot_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@mipmap/line_shadow" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/taskitemshot_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="17dp"
+                android:textColor="#333333"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="14dp"
+                android:background="@color/app_line"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/taskitemshot_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="#A0A0A0"
+                android:textSize="@dimen/task_desc_textsize" />
+
+            <TextView
+                android:id="@+id/taskitemshot_video_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="请根据以下进行视频拍摄"
+                android:textColor="@color/app_textcolor"
+                android:textSize="@dimen/app_textsize_normal" />
+
+            <com.orange.oy.view.MyGridView
+                android:id="@+id/taskphoto_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:verticalSpacing="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/taskitemshot_video_layout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="14dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/taskitemshot_shotimg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#000000"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/taskitemshot_shot_play"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_alignEnd="@+id/taskitemshot_shotimg"
+                    android:layout_alignRight="@+id/taskitemshot_shotimg"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:background="@drawable/taskitemshotill_start_bg"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/taskitemshotill_start" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/spread_button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/spread_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/spread_button_down" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text=""
+                android:textColor="@color/app_textcolor"
+                android:textSize="@dimen/app_textsize_normal" />
+
+            <LinearLayout
+                android:id="@+id/lin_alls"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <com.orange.oy.view.MyImageView
+                    android:id="@+id/taskitemshot_video1"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_nowsave"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="手机现有存储空间"
+                            android:textColor="@color/makesure"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_savetime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="预计最长可拍摄"
+                            android:textColor="@color/makesure"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:id="@+id/itemapplyone_runnow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/dialog_upload1"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="检测可拍摄时长"
+                            android:textColor="@color/appp_titletext"
+                            android:textSize="8sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/taskitemshot_video1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/taskitemshot_video1"
+                    android:gravity="center_vertical"
+                    android:text="提示：视频不能超过3分钟"
+                    android:textColor="@color/colorPrimaryDark2"
+                    android:textSize="@dimen/app_textsize_normal"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="备注"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/taskitemshot_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/unify_input"
+                    android:gravity="top|left"
+                    android:hint="Notes"
+                    android:minHeight="70dp"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_small"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@mipmap/line_shadow" />
+
+    <LinearLayout
+        android:id="@+id/lin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/makesure"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/taskitemshot_button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="该任务无法执行"
+            android:textColor="#6f6f6f"
+            android:textSize="@dimen/app_textsize_normal"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/taskitemshot_view"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#b7b7b7"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/taskitemshot_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/appp_titletext"
+            android:textSize="@dimen/app_textsize_normal" />
+    </LinearLayout>
+</LinearLayout>

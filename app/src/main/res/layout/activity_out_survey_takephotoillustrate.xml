@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.orange.oy.activity.black.OutSurveyTakephotoillustrateActivity">
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/takephoto_title_outsurvey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/taskphoto_gridview_mar"
+        android:paddingRight="@dimen/taskphoto_gridview_mar"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/takephoto_button_outsurvey"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/takephoto_name_outsurvey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/app_textcolor"
+                android:textSize="15sp"/>
+
+            <View
+                android:id="@+id/takephoto_nameline_outsurvey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/takephoto_name_outsurvey"
+                android:layout_marginTop="20dp"
+                android:background="@color/app_line"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/takephoto_nameline_outsurvey">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/takephoto_desc_outsurvey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#ff535353"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/shili"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="示例:"
+                        android:textColor="@color/app_textcolor"
+                        android:textSize="17sp"/>
+
+                    <GridView
+                        android:id="@+id/takephoto_gridview_outsurvey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="@dimen/taskphoto_gridview_item_mar"
+                        android:listSelector="#00000000"
+                        android:numColumns="3"
+                        android:verticalSpacing="@dimen/taskphoto_gridview_item_mar"/>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/takephoto_button_outsurvey"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/button_center"
+            android:background="@drawable/login_button"
+            android:text="下一步"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/app_textsize_big"/>
+
+        <View
+            android:id="@+id/button_center"
+            android:layout_width="1px"
+            android:layout_height="1px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/takephoto_button2_outsurvey"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/button_center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_button"
+            android:text="无法执行"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/app_textsize_big"/>
+
+        <Button
+            android:id="@+id/taskitmpg_button3"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_button"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/app_textsize_big"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

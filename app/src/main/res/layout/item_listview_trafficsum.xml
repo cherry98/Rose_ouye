@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="61dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/itemlistviewmytrafficsum_image"
+            android:layout_width="30dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:src="@mipmap/task_list_ico"/>
+
+        <TextView
+            android:id="@+id/itemlistviewmytrafficsum_text"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/app_textcolor"
+            android:textSize="@dimen/app_textsize_big"/>
+
+        <TextView
+            android:id="@+id/itemlistviewmytrafficsum_trafficsum"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/app_textcolor"
+            android:textSize="@dimen/app_textsize_big"/>
+
+        <ImageView
+            android:id="@+id/itemlistviewmytrafficsum_right"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/aboutus_ico3"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_new_line"/>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/itemalltask_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/itemcorpgrab_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/task_package" />
+
+        <TextView
+            android:id="@+id/itemcorpgrab_district"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/homepage_city"
+            android:textSize="@dimen/app_textsize_normal1" />
+
+        <TextView
+            android:id="@+id/itemcorpgrab_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_normal1" />
+
+        <TextView
+            android:id="@+id/itemcorpgrab_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/homepage_select"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

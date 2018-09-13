@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimaryDark"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/find_citysearch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/find_distric"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxWidth="80dp"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:text="@string/find_city"
+                android:textColor="@color/appp_titletext"
+                android:textSize="@dimen/app_textsize_big"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/find_jt1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/find_login"
+            android:layout_toRightOf="@+id/find_citysearch"
+            android:background="@drawable/find_search"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:textColor="@color/appp_titletext">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/search"/>
+
+            <EditText
+                android:id="@+id/find_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:hint="@string/find_hint_search"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="#ffd6d6d6"
+                android:textColorHint="#ffd6d6d6"
+                android:textSize="@dimen/app_textsize_normal"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/find_login"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="@string/find_login"
+            android:textColor="@color/appp_titletext"
+            android:textSize="@dimen/app_textsize_big"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/app_background2">
+
+        <TextView
+            android:id="@+id/find_tab_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/find_tab_line"
+            android:gravity="center"
+            android:text="@string/find_tab_left"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/app_textsize_normal"/>
+
+        <View
+            android:id="@+id/find_tab_left_line"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/find_tab_line"
+            android:background="@color/colorPrimaryDark"/>
+
+        <View
+            android:id="@+id/find_tab_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/app_line"/>
+
+        <TextView
+            android:id="@+id/find_tab_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/find_tab_line"
+            android:gravity="center"
+            android:text="@string/find_tab_right"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/app_textsize_normal"/>
+
+        <View
+            android:id="@+id/find_tab_right_line"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/find_tab_line"
+            android:background="@color/colorPrimaryDark"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_line"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/find_listview_left"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrHeaderSubTextColor="@color/text_small_color"
+        ptr:ptrHeaderTextColor="@color/text_middle_color"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/find_listview_right"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrHeaderSubTextColor="@color/text_small_color"
+        ptr:ptrHeaderTextColor="@color/text_middle_color"/>
+</LinearLayout>

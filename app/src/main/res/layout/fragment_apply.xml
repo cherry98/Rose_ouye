@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ptr="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/app_background2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/apply_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="等待执行"
+            android:textColor="@color/homepage_select"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:id="@+id/apply_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="任务状态"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background2"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <View
+            android:id="@+id/apply_oneimg"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_weight="1"
+            android:background="@color/homepage_select"/>
+
+        <View
+            android:id="@+id/apply_twoimg"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_weight="1"
+            android:background="@color/homepage_select"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_task_state"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_background2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:id="@+id/lin_task1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_No"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/app_textsize_normal2"/>
+
+            <TextView
+                android:id="@+id/apply_one2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center"
+                android:text="未通过"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/app_textsize_small"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lin_task2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_now"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/app_textsize_normal2"/>
+
+            <TextView
+                android:id="@+id/apply_two2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center"
+                android:text="上传中"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/app_textsize_small"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lin_task3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_shen"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/app_textsize_normal2"/>
+
+            <TextView
+                android:id="@+id/apply_three2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="审核中"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/app_textsize_small"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lin_task4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_Yes"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/app_textsize_normal2"/>
+
+            <TextView
+                android:id="@+id/apply_four2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="已通过"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/app_textsize_small"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/alltask_background"/>
+
+        <TextView
+            android:id="@+id/tv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/apply_background"
+            android:gravity="center"
+            android:minWidth="110dp"
+            android:text="有3个礼品待领取"
+            android:textColor="@color/app_background2"
+            android:textSize="@dimen/app_textsize_small"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/alltask_background"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/alltask_background"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/lin_Nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/lin_Nodata_img"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/grrw_image"/>
+
+        <TextView
+            android:id="@+id/lin_Nodata_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="很遗憾，您还没有待执行任务，\n快去广场领取任务吧！"
+            android:textColor="@color/homepage_city"
+            android:textSize="@dimen/app_textsize_normal1"/>
+    </LinearLayout>
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/applylistview_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background2"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="7dp"
+        android:listSelector="@android:color/transparent"
+        android:padding="7dp"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrHeaderSubTextColor="@color/text_small_color"
+        ptr:ptrHeaderTextColor="@color/text_middle_color"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                                                              android:id="@+id/applylistview_two"
+                                                              android:layout_width="match_parent"
+                                                              android:layout_height="match_parent"
+                                                              android:background="@color/app_background2"
+                                                              android:divider="@android:color/transparent"
+                                                              android:dividerHeight="7dp"
+                                                              android:listSelector="@android:color/transparent"
+                                                              android:padding="7dp"
+                                                              android:scrollbars="none"
+                                                              ptr:ptrAnimationStyle="flip"
+                                                              ptr:ptrDrawable="@drawable/default_ptr_flip"
+                                                              ptr:ptrHeaderSubTextColor="@color/text_small_color"
+                                                              ptr:ptrHeaderTextColor="@color/text_middle_color"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                                                              android:id="@+id/applylistview_three"
+                                                              android:layout_width="match_parent"
+                                                              android:layout_height="match_parent"
+                                                              android:background="@color/app_background2"
+                                                              android:divider="@android:color/transparent"
+                                                              android:dividerHeight="7dp"
+                                                              android:listSelector="@android:color/transparent"
+                                                              android:padding="7dp"
+                                                              android:scrollbars="none"
+                                                              ptr:ptrAnimationStyle="flip"
+                                                              ptr:ptrDrawable="@drawable/default_ptr_flip"
+                                                              ptr:ptrHeaderSubTextColor="@color/text_small_color"
+                                                              ptr:ptrHeaderTextColor="@color/text_middle_color"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                                                              android:id="@+id/applylistview_four"
+                                                              android:layout_width="match_parent"
+                                                              android:layout_height="match_parent"
+                                                              android:background="@color/app_background2"
+                                                              android:divider="@android:color/transparent"
+                                                              android:dividerHeight="7dp"
+                                                              android:listSelector="@android:color/transparent"
+                                                              android:padding="7dp"
+                                                              android:scrollbars="none"
+                                                              ptr:ptrAnimationStyle="flip"
+                                                              ptr:ptrDrawable="@drawable/default_ptr_flip"
+                                                              ptr:ptrHeaderSubTextColor="@color/text_small_color"
+                                                              ptr:ptrHeaderTextColor="@color/text_middle_color"/>
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                                                              android:id="@+id/applylistview_five"
+                                                              android:layout_width="match_parent"
+                                                              android:layout_height="match_parent"
+                                                              android:background="@color/app_background2"
+                                                              android:divider="@android:color/transparent"
+                                                              android:dividerHeight="7dp"
+                                                              android:listSelector="@android:color/transparent"
+                                                              android:padding="7dp"
+                                                              android:scrollbars="none"
+                                                              ptr:ptrAnimationStyle="flip"
+                                                              ptr:ptrDrawable="@drawable/default_ptr_flip"
+                                                              ptr:ptrHeaderSubTextColor="@color/text_small_color"
+                                                              ptr:ptrHeaderTextColor="@color/text_middle_color"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                                                              android:id="@+id/applylistview_six"
+                                                              android:layout_width="match_parent"
+                                                              android:layout_height="match_parent"
+                                                              android:background="@color/app_background2"
+                                                              android:divider="@android:color/transparent"
+                                                              android:dividerHeight="7dp"
+                                                              android:listSelector="@android:color/transparent"
+                                                              android:padding="7dp"
+                                                              android:scrollbars="none"
+                                                              ptr:ptrAnimationStyle="flip"
+                                                              ptr:ptrDrawable="@drawable/default_ptr_flip"
+                                                              ptr:ptrHeaderSubTextColor="@color/text_small_color"
+                                                              ptr:ptrHeaderTextColor="@color/text_middle_color"/>
+
+</LinearLayout>

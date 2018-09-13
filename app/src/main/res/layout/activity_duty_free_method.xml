@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background2"
+              android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/dutyfreemethod_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.orange.oy.view.AppTitle>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/dutyfree_background"
+                android:gravity="center"
+                android:textColor="@color/homepage_notselect"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="根据国家相关法律法规规定，您需要做如下选择："
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/app_textsize_small"/>
+
+            <RadioGroup
+                android:id="@+id/dutymethod_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/dutymethod_radio1"
+                    style="@style/task_question_radiobuttonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/itemalltask_background"
+                    android:padding="10dp"
+                    android:text="@string/dutyfreemethod_item1"
+                    android:textColor="@color/dialogupload_title"
+                    android:textSize="@dimen/app_textsize_small"/>
+
+                <RadioButton
+                    android:id="@+id/dutymethod_radio2"
+                    style="@style/task_question_radiobuttonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/itemalltask_background"
+                    android:padding="10dp"
+                    android:text="推荐3位好友注册并绑定身份信息，偶业将替您缴纳相应税金（好友额度不受影响） "
+                    android:textColor="@color/dialogupload_title"
+                    android:textSize="@dimen/app_textsize_small"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/dutymethod_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/unify_input"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/dutymethod_edit1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="填写好友注册手机号码"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textSize="@dimen/app_textsize_normal1"/>
+
+                    <TextView
+                        android:id="@+id/dutymethod_verified1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="该用户已实名认证"
+                        android:textColor="@color/makesure"
+                        android:textSize="@dimen/app_textsize_normal1"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/unify_input"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/dutymethod_edit2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="填写好友注册手机号码"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textSize="@dimen/app_textsize_normal1"/>
+
+                    <TextView
+                        android:id="@+id/dutymethod_verified2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="该用户已实名认证"
+                        android:textColor="@color/makesure"
+                        android:textSize="@dimen/app_textsize_normal1"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/unify_input"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/dutymethod_edit3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="填写好友注册手机号码"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textSize="@dimen/app_textsize_normal1"/>
+
+                    <TextView
+                        android:id="@+id/dutymethod_verified3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="该用户已实名认证"
+                        android:textColor="@color/makesure"
+                        android:textSize="@dimen/app_textsize_normal1"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="您推荐的好友成功注册并验证真实身份信息后，您的提现额度将自动解锁。"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_small"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/dutymethod_checkbox"
+                    style="@style/task_question_checkboxStyle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/dutymethod_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本人已阅读并同意签署《隐私协议》"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_small"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/dutymethod_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/identitysure"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/app_background2"
+        android:textSize="@dimen/app_textsize_normal2"/>
+</LinearLayout>
+

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/main"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/lin_Nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/lin_Nodata_img"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/grrw_image2"/>
+
+        <TextView
+            android:id="@+id/lin_Nodata_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="网络速度较慢，\n服务器正在努力奔跑中……"
+            android:textColor="#FF231916"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background2"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.orange.oy.view.AppTitle
+            android:id="@+id/taskitemedit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/taskitemedit_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/app_line"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/taskitemedit_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="#A0A0A0"
+                    android:textSize="@dimen/task_desc_textsize"/>
+
+                <TextView
+                    android:id="@+id/shili"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="示例:"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="@dimen/app_textsize_normal"/>
+
+                <com.orange.oy.view.TaskEditGridView
+                    android:id="@+id/taskitemedit_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:horizontalSpacing="@dimen/taskphoto_gridview_item_mar"
+                    android:listSelector="#00000000"
+                    android:numColumns="3"
+                    android:verticalSpacing="@dimen/taskphoto_gridview_item_mar"/>
+
+                <ImageView
+                    android:id="@+id/taskitemedit_spread"
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/spread_button_up"/>
+
+                <TextView
+                    android:id="@+id/taskitemedit_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="17sp"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/taskitemedit_progressbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/progressbar_biaoshi"
+                        android:layout_width="@dimen/ouye_progressbarbiaoshi"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="13dp"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/point_edit"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ProgressBar
+                            android:id="@+id/progressbar"
+                            style="@style/ProgressBar_Mini"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/ouye_progressbarmargin"
+                            android:layout_marginRight="@dimen/ouye_progressbarmargin"
+                            android:max="100"/>
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="12dp"
+                            android:src="@mipmap/start_edit"/>
+
+                        <ImageView
+                            android:id="@+id/progressbar_jiedian3"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="12dp"
+                            android:src="@mipmap/end_edit"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/taskitemedit_question_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffe8e8e8"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/app_line" />-->
+
+        <Button
+            android:id="@+id/taskitemedit_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="#ffF65D57"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"
+            android:visibility="visible"/>
+    </LinearLayout>
+</FrameLayout>

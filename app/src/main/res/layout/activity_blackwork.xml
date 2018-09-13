@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/black_fragment"
+        class="com.orange.oy.activity.black.BlackBackDropFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/fragmentRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+    <ImageView
+        android:id="@+id/fragmentRoot_imageview"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:background="#ffffffff"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/blackimg"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/black_notice"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity=""
+        android:layout_marginTop="50dp"
+        android:background="#dddddd"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:text="默认数据"
+        android:visibility="gone" />
+
+</FrameLayout>

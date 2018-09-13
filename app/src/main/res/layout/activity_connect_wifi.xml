@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/img_connect_wifi_back"
+            android:layout_width="36dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/zmer_back_selector" />
+
+        <TextView
+            android:id="@+id/text_setting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/connect_internet_title"
+            android:textColor="@color/connect_zmer_text_color"
+            android:textSize="@dimen/text_size_large" />
+
+        <Button
+            android:id="@+id/btn_reconnect_search_wifi"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="刷新wifi列表"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_11" />
+
+    <ListView
+        android:id="@+id/list_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_connect_phone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/img_connect_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/text_connect_phone_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_connect_phone"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:text="正在尝试将VR连接到手机"
+                android:textColor="@color/gray_11"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_connect_phone_info"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="请稍后......"
+                android:textColor="@color/gray_11"
+                android:textSize="@dimen/text_size_medium" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_connect_zmer_to_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/img_connect_zmer_to_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/text_connect_zmer_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_connect_zmer_to_wifi"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:text="正在尝试将VR连接到手机"
+                android:textColor="@color/gray_11"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_connect_zmer_info"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="请稍后......"
+                android:textColor="@color/gray_11"
+                android:textSize="@dimen/text_size_medium" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_connect_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_connect_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:background="@mipmap/connect_wifi_success" />
+
+        <TextView
+            android:id="@+id/text_connect_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_connect_success"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:drawableLeft="@mipmap/connect_success"
+            android:drawablePadding="10dp"
+            android:text="连接成功！"
+            android:textColor="@color/gray_11"
+            android:textSize="@dimen/text_size_medium" />
+
+    </RelativeLayout>
+</LinearLayout>

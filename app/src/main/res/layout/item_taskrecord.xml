@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/itemrecord_delete"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/sujbect_delete" />
+
+        <TextView
+            android:id="@+id/itemrecord_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/itemrecord_delete"
+            android:text="1. 请问您是通过什么方式知道偶业的？"
+            android:textColor="@color/homepage_city"
+            android:textSize="@dimen/app_textsize_small" />
+
+        <TextView
+            android:id="@+id/itemrecord_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/itemrecord_name"
+            android:text="[至少选择2个]"
+            android:textColor="@color/homepage_select"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/itemrecord_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_upload3"
+            android:paddingBottom="3dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="3dp"
+            android:text="编辑"
+            android:textColor="@color/homepage_select"
+            android:textSize="10sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <com.orange.oy.view.MyListView
+        android:id="@+id/itemrecord_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:divider="@null"
+        android:listSelector="@color/sobot_transparent"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/itemrecord_blank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/questionradio_nos_bg"
+        android:hint="请将正确答案填写在此处"
+        android:minHeight="32dp"
+        android:textColor="@color/homepage_city"
+        android:textColorHint="@color/homepage_notselect"
+        android:textSize="13sp"
+        android:visibility="gone" />
+</LinearLayout>

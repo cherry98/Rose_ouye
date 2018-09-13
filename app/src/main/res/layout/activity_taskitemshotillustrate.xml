@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/taskitmshotill_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/taskitmshotill_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/app_textcolor"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_line" />
+
+        <TextView
+            android:id="@+id/taskitmshotill_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/app_textcolor"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/taskitemshotill_video_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="示例:"
+                android:textColor="@color/app_textcolor"
+                android:textSize="17sp" />
+
+            <com.orange.oy.view.MyGridView
+                android:id="@+id/taskphoto_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:verticalSpacing="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/taskitemshotill_video_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/taskitmshotill_shotimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#000000"
+                    android:scaleType="centerCrop" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/taskitmshotill_shot_play"-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:background="@drawable/taskitemshotill_start_bg"-->
+                <!--android:drawableLeft="@mipmap/taskitemshotill_start"-->
+                <!--android:drawablePadding="5dp"-->
+                <!--android:focusableInTouchMode="false"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:text="3.00"-->
+                <!--android:textColor="#ffffffff"-->
+                <!--android:textSize="15sp"/>-->
+                <ImageView
+                    android:id="@+id/taskitmshotill_shot_play"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/taskitemshotill_start_bg"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/taskitemshotill_start" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/taskitmshotill_radiolayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="现场是否有任务要求拍摄点："
+                android:textColor="@color/app_textcolor"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/taskitmshotill_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/taskitmshotill_r1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/radiobutton_bg1"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="有"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/taskitmshotill_r2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/radiobutton_bg1"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="无"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="14sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/taskitmshotill_button"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_button"
+                android:text="下一步"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/app_textsize_big" />
+
+            <Button
+                android:id="@+id/taskitmshotill_button2"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_button"
+                android:text="无法执行"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/app_textsize_big" />
+
+            <Button
+                android:id="@+id/taskitmshotill_button3"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/login_button"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/app_textsize_big"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

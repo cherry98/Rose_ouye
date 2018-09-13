@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background2"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical"
+              tools:context="com.orange.oy.activity.mycorps_315.TeamtaskProjectStateActivity">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/taskILL_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.orange.oy.view.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head"/>
+
+        <com.orange.oy.view.ObservableScrollView
+            android:id="@+id/scv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_weight="1"
+                        android:src="@mipmap/projectname2"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/alltask_background"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center|left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:textColor="#FF231916"
+                            android:textSize="@dimen/app_textsize_normal1"/>
+
+                        <TextView
+                            android:id="@+id/tv_terrace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#FFA0A0A0"
+                            android:textSize="12sp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="信誉"
+                                android:textColor="#FFA0A0A0"
+                                android:textSize="12sp"/>
+
+                            <ImageView
+
+                                android:id="@+id/iv_fiveStar1"
+                                android:layout_width="11dp"
+                                android:layout_height="12dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@mipmap/jrzd_icon_xiyu"/>
+
+                            <ImageView
+                                android:id="@+id/iv_fiveStar2"
+                                android:layout_width="11dp"
+                                android:layout_height="12dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@mipmap/jrzd_icon_xiyu"/>
+
+                            <ImageView
+                                android:id="@+id/iv_fiveStar3"
+                                android:layout_width="11dp"
+                                android:layout_height="12dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@mipmap/jrzd_icon_xiyu"/>
+
+                            <ImageView
+                                android:id="@+id/iv_fiveStar4"
+                                android:layout_width="11dp"
+                                android:layout_height="12dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@mipmap/jrzd_icon_xiyu"/>
+
+                            <ImageView
+                                android:id="@+id/iv_fiveStar5"
+                                android:layout_width="11dp"
+                                android:layout_height="12dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@mipmap/jrzd_icon_xiyu"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/homepage_notselect"
+                            android:textSize="10sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/tv_preview"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@mipmap/grab_preview"/>
+
+                            <ImageView
+                                android:id="@+id/iv_standard"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@mipmap/illustrate_icon"/>
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_btn_task"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/dialog_upload3"
+                            android:gravity="right"
+                            android:paddingBottom="3dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="3dp"
+                            android:text="任务协议"
+                            android:textColor="@color/homepage_select"
+                            android:textSize="@dimen/app_textsize_small3"
+                            android:visibility="invisible"/>
+
+                        <TextView
+                            android:id="@+id/tv_Auditcycle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#FFA0A0A0"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/alltask_background"/>
+
+                <LinearLayout
+                    android:id="@+id/teamtaskproject_headmoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="队长奖励"
+                        android:textColor="#FFA0A0A0"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="="
+                        android:textColor="#FFA0A0A0"
+                        android:textSize="18sp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_totalmoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:textColor="#FFF65D57"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="总金额(元）"
+                            android:textColor="#FFA0A0A0"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="#FFA0A0A0"
+                        android:textSize="18sp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_GiveMemberMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:textColor="#FFF65D57"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="分给队员"
+                            android:textColor="#FFA0A0A0"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textColor="#FFA0A0A0"
+                        android:textSize="18sp"/>
+
+                    <LinearLayout
+                        android:id="@+id/corpsprice_bounty"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@mipmap/group2"
+                            android:textColor="#FFF65D57"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="奖励金额"
+                            android:textColor="#FFA0A0A0"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/alltask_background"/>
+
+                <com.orange.oy.view.TasknumberTreeView
+                    android:id="@+id/tasknumview"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <View
+                    android:id="@+id/tasknumview_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/alltask_background"/>
+
+                <ListView
+                    android:id="@+id/statelistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:divider="@null"
+                    android:listSelector="@android:color/transparent"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:scrollbars="none"/>
+            </LinearLayout>
+        </com.orange.oy.view.ObservableScrollView>
+
+        <include layout="@layout/load_more"/>
+    </com.orange.oy.view.PullToRefreshLayout>
+
+
+</LinearLayout>

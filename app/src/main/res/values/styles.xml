@@ -1,0 +1,284 @@
+<resources>
+
+
+    <style name="popupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/in</item>
+        <item name="android:windowExitAnimation">@anim/out</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MainTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/guide_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!-- 首页底部按钮样式 -->
+    <style name="footbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/app_textsize_small</item>
+        <item name="android:textColor">@drawable/meau_textcolor</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+    <!--选择器弹出方式-->
+    <style name="selecterStyle" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+    <!--星期样式-->
+    <style name="weekstyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/app_textcolor</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--单选按钮样式-拍照任务页-->
+    <style name="radiobuttonStyle">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/radiobutton_bg1</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/app_textcolor</item>
+        <item name="android:textSize">@dimen/app_textsize_normal</item>
+    </style>
+
+    <!--企业认证 支付宝和账户余额-->
+    <style name="checkboxStyle">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/radiobutton_bg1</item>
+        <item name="android:drawablePadding">30dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/app_textcolor</item>
+        <item name="android:textSize">@dimen/app_textsize_small</item>
+    </style>
+    <!--如性别选择框 单选-->
+    <style name="task_question_radiobuttonStyle" parent="radiobuttonStyle">
+        <item name="android:textSize">@dimen/app_textsize_normal</item>
+        <item name="android:textColor">@color/app_textcolor</item>
+    </style>
+
+    <style name="checkboxbuttonStyle" parent="checkboxStyle">
+        <item name="android:textSize">@dimen/app_textsize_small</item>
+        <item name="android:textColor">@color/app_textcolor</item>
+    </style>
+    <!--方的 例：图片选择 checkbox_bg1和checkbox_bg4一样-->
+    <style name="task_question_checkboxStyle" parent="radiobuttonStyle">
+        <item name="android:drawableLeft">@drawable/checkbox_bg1</item>
+        <item name="android:textSize">@dimen/app_textsize_normal</item>
+        <item name="android:textColor">@color/app_textcolor</item>
+    </style>
+    <!--方的 例：图片选择-->
+    <style name="img_checkboxStyle" parent="radiobuttonStyle">
+        <item name="android:drawableLeft">@drawable/checkbox_bg4</item>
+        <item name="android:textSize">@dimen/app_textsize_normal</item>
+        <item name="android:textColor">@color/app_textcolor</item>
+    </style>
+    <!--圆的 例：勾选协议-->
+    <style name="task_question_checkboxStyle1" parent="radiobuttonStyle">
+        <item name="android:drawableLeft">@drawable/checkbox_bg3</item>
+        <item name="android:textSize">@dimen/app_textsize_normal</item>
+        <item name="android:textColor">@color/app_textcolor</item>
+    </style>
+
+    <!--注册时的密码显示与隐藏-->
+    <style name="login_checkboxStyle" parent="radiobuttonStyle">
+        <item name="android:drawableLeft">@drawable/checkbox_bg6</item>
+        <item name="android:textSize">@dimen/app_textsize_normal</item>
+        <item name="android:textColor">@color/app_textcolor</item>
+    </style>
+    <!--单题模式进度条-->
+    <style name="ProgressBar_Mini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">47dip</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/progressbar_mini</item>
+    </style>
+    <!--单体模式完成进度条-->
+    <style name="ProgressBar_Mini_Reset" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">47dip</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/progressbar_mini_reset</item>
+    </style>
+    <!--VR设备-->
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="Bubble.TextAppearance.Dark" parent="android:TextAppearance.Medium">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#ff7f7f7f</item>
+    </style>
+
+
+    <style name="Bubble.TextAppearance.Light" parent="Bubble.TextAppearance.Dark">
+        <item name="android:textColor">#ffeeeeee</item>
+    </style>
+
+    <style name="ClusterIcon.TextAppearance" parent="android:TextAppearance">
+        <item name="android:textColor">#ffeeeeee</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--不再显示内容-->
+    <style name="task_question_checkboxStyle2" parent="radiobuttonStyle">
+        <item name="android:drawableLeft">@drawable/checkbox_bg2</item>
+        <item name="android:textSize">@dimen/app_textsize_normal</item>
+        <item name="android:textColor">@color/app_textcolor</item>
+    </style>
+
+    <style name="task_question_checkboxStyle3" parent="radiobuttonStyle">
+        <item name="android:drawableLeft">@drawable/checkbox_bg3</item>
+        <item name="android:textSize">@dimen/app_textsize_normal</item>
+        <item name="android:textColor">@color/app_textcolor</item>
+    </style>
+
+
+    <style name="loading_dialog" parent="@android:style/Theme.Dialog">
+        <!--背景透明正在加载-->
+        <!-- 是否支持透window明度 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- window背景颜色 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 屏幕内容区域以外的背景是否可以设置灰度值(与backgroundDimAmount搭配使用) -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 灰度值 -->
+        <item name="android:backgroundDimAmount">0.8</item>
+
+    </style>
+    <!--星星打分评论-->
+    <style name="myRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_drawable</item>
+        <item name="android:minHeight">22dp</item>
+        <item name="android:maxHeight">22dp</item>
+    </style>
+
+    <style name="DialogManage">
+        <!--Dialog的windowFrame为空-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否悬浮在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--是否显示title-->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否有遮盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--半透明背景是否可用-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+    <!--查看大图评论弹窗-->
+    <style name="dialogstyle2">
+        <!--设置dialog的背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--设置Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--设置无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置窗口内容不覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--设置动画，在这里使用让它继承系统的Animation.Dialog-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!--背景是否模糊显示-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--设置底部弹出F-->
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <!--拆红包弹框-->
+    <style name="dialogstyle">
+        <!--设置dialog的背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--设置Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--设置无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置窗口内容不覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--设置动画，在这里使用让它继承系统的Animation.Dialog-->
+        <item name="android:windowAnimationStyle">@style/notAnimation</item>
+        <!--背景是否模糊显示-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <!--分享弹窗方式-->
+    <style name="BottomUpStyle">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+
+    <!--创建战队页面 字体颜色和大小-->
+    <style name="mycorps_style">
+        <item name="android:textColor">@color/homepage_city</item>
+        <item name="android:textSize">@dimen/app_textsize_normal1</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!--战队设置开关按钮-->
+    <style name="setcorps_switch" parent="radiobuttonStyle">
+        <item name="android:drawableLeft">@drawable/checkbox_bg5</item>
+        <item name="android:textSize">@dimen/app_textsize_normal</item>
+        <item name="android:textColor">@color/app_textcolor</item>
+    </style>
+    <style name="notAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+</resources>

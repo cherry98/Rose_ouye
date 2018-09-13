@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background2"
+              android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/calltask_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="250dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/calltak_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff231916"
+                    android:textSize="@dimen/app_textsize_normal2"
+                    android:textStyle="bold"/>
+
+                <!--<com.orange.oy.view.CollapsibleTextView-->
+                <!--android:id="@+id/calltak_desc"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"/>-->
+
+                <TextView
+                    android:id="@+id/calltak_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FFA0A0A0"
+                    android:textSize="@dimen/app_textsize_small"/>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <ImageView
+            android:id="@+id/calltask_button"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="120dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/dhrw_button_bddh"/>
+
+        <RelativeLayout
+            android:id="@+id/calltask_findrecode"
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:layout_above="@+id/lin_Upload"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/callactivity_bg"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center|left"
+                android:text="上传录音"
+                android:textColor="#ff000000"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="40dp"
+                android:background="#FFE7E7E7"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="41dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_recordingfile"
+                    android:layout_width="0dp"
+                    android:layout_height="34dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/callactivity_edit_bg"
+                    android:gravity="left|center_vertical"
+                    android:hint="查找录音文件"
+                    android:singleLine="true"
+                    android:textColor="#ffA0A0A0"
+                    android:textColorHint="#ffA0A0A0"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_findrecordingfile"
+                    android:layout_width="0dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="#ffF65D57"
+                    android:gravity="center"
+                    android:text="查看录音"
+                    android:textColor="#ffffffff"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lin_Upload"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ffF65D57"
+            android:gravity="center"
+            android:text="上传"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+    <!--  <View
+          android:layout_width="match_parent"
+          android:layout_height="5dp"
+          android:background="@mipmap/line_shadow" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:visibility="gone">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="拨打电话"-->
+    <!--android:textColor="#6f6f6f"-->
+    <!--android:textSize="@dimen/app_textsize_normal" />-->
+
+    <!--<View-->
+    <!--android:id="@+id/calltask_view"-->
+    <!--android:layout_width="1dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:background="#b7b7b7" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/calltask_button2"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="无法执行"-->
+    <!--android:textColor="#6f6f6f"-->
+    <!--android:textSize="@dimen/app_textsize_normal" />-->
+    <!--</LinearLayout>-->
+</LinearLayout>

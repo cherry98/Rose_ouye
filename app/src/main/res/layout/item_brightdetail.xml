@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/app_background2"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/taskdetail_list_left_ico"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:minHeight="70dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_brightdetail_codename"
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="3dp"
+                    android:singleLine="true"
+                    android:text="网点编号"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:id="@+id/item_brightdetail_testtask"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bright_testtask"
+                    android:gravity="center"
+                    android:text="演练任务"
+                    android:textColor="#3875f1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:minHeight="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_brightdetail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:minHeight="27dp"
+                    android:text="网点名称"
+                    android:textColor="@color/app_textcolor"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:id="@+id/item_brightdetail_commontask"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bright_commontask"
+                    android:gravity="center"
+                    android:text="普通任务"
+                    android:textColor="#5ff4ab"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/app_new_line"/>
+
+    <TextView
+        android:id="@+id/item_brightdetail_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="详细地址"
+        android:textColor="@color/myteam_search_text"
+        android:textSize="@dimen/app_textsize_normal"/>
+
+    <TextView
+        android:id="@+id/item_brightdetail_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:text="访员账号"
+        android:textColor="@color/myteam_search_text"
+        android:textSize="@dimen/app_textsize_normal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/item_brightdetail_looktime_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/item_brightdetail_offline"
+            android:lineSpacingExtra="5dp"
+            android:text="可执行时间段"
+            android:textColor="@color/colorPrimaryDark2"
+            android:textSize="17sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/item_brightdetail_looktime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/item_brightdetail_looktime_top"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/myteam_search_text"
+            android:textSize="@dimen/app_textsize_normal"/>
+
+        <TextView
+            android:id="@+id/item_brightdetail_offline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="离线下载"
+            android:textColor="#ff0000ff"
+            android:textSize="@dimen/app_textsize_big"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_line"/>
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="146dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_r_6_stroke_ffececec"
+        android:paddingTop="10dp">
+
+        <View
+            android:id="@+id/itemmysponsp_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:background="#ffececec"/>
+
+        <ImageView
+            android:id="@+id/itemmysponsp_img"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/itemmysponsp_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/itemmysponsp_line"
+            android:text="动主题的"
+            android:textColor="#231916"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/itemmysponsp_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemmysponsp_title"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/itemmysponsp_line"
+            android:text="活动起止日期：2018 01-22  ~ 2018 01-28"
+            android:textColor="#A0A0A0"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/itemmysponsp_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemmysponsp_item1"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/itemmysponsp_line"
+            android:text="赞助总金额：1000元"
+            android:textColor="#A0A0A0"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="22dp"
+            android:layout_above="@+id/itemmysponsp_line2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/itemmysponsp_b2"
+            android:background="@drawable/bg_r_11_stroke_fff65d57"
+            android:gravity="center"
+            android:text="查看"
+            android:textColor="#F65D57"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/itemmysponsp_b2"
+            android:layout_width="56dp"
+            android:layout_height="22dp"
+            android:layout_above="@+id/itemmysponsp_line2"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_r_11_stroke_fff65d57"
+            android:gravity="center"
+            android:text="发起活动"
+            android:textColor="#F65D57"
+            android:textSize="10sp"/>
+
+        <View
+            android:id="@+id/itemmysponsp_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="48dp"
+            android:layout_toRightOf="@+id/itemmysponsp_line"
+            android:background="#ffececec"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/itemmysponsp_line"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/itemmysponsp_num1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center|bottom"
+                        android:textColor="#FFF65D57"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center|top"
+                        android:text="参与人数"
+                        android:textColor="#FFA0A0A0"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/itemmysponsp_num2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center|bottom"
+                        android:textColor="#FFF65D57"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center|top"
+                        android:text="广告浏览"
+                        android:textColor="#FFA0A0A0"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/itemmysponsp_num3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center|bottom"
+                        android:textColor="#FFF65D57"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center|top"
+                        android:text="广告点击"
+                        android:textColor="#FFA0A0A0"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

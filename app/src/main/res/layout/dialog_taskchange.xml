@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dialog_selecter_height"
+    android:background="@color/app_background2"
+    android:minHeight="@dimen/dialog_selecter_height"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="@color/myteam_search_bg"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:paddingLeft="15dp"-->
+    <!--android:paddingRight="15dp"-->
+    <!--android:paddingTop="10dp">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/myteam_search_bg"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:padding="5dp">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="15dp"-->
+    <!--android:layout_marginRight="1dp"-->
+    <!--android:scaleType="fitEnd"-->
+    <!--android:src="@mipmap/search"/>-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/taskchange_search"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginLeft="1dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@null"-->
+    <!--android:gravity="center"-->
+    <!--android:hint="搜索"-->
+    <!--android:singleLine="true"-->
+    <!--android:textColor="@color/myteam_search_text"-->
+    <!--android:textSize="@dimen/app_textsize_normal"/>-->
+    <!--</LinearLayout>-->
+    <!--</RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/change_friends" />
+
+        <ImageView
+            android:id="@+id/taskchange_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/change_exit" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/app_line" />
+
+    <ListView
+        android:id="@+id/taskchange_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:divider="#00000000"
+        android:listSelector="@null"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/taskchange_oneself"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="#f5f5f5"
+        android:gravity="center"
+        android:text="分给自己"
+        android:textColor="#7a7a7a"
+        android:textSize="16sp" />
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#fffafafa"
+              android:minHeight="40dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_calendar_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:minHeight="40dp"
+        android:text="项目名称"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/app_textsize_big"/>
+
+    <LinearLayout
+        android:id="@+id/item_calendar_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="3dp"
+            android:padding="4dp"
+            android:src="@mipmap/calendar_point"/>
+
+        <TextView
+            android:id="@+id/item_calendar_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ff888888"
+            android:textSize="@dimen/app_textsize_normal"/>
+    </LinearLayout>
+</LinearLayout>

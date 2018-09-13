@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="aplumMapcolor">#FFA07A</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#f13839</color>
+    <color name="colorPrimaryDark2">#ff262626</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- 应用内统一文字颜色 -->
+    <color name="app_textcolor">#262626</color>
+    <color name="appp_titletext">#fff2f2f2</color>
+
+    <color name="app_textcolor2">#A0A0A0</color>
+
+    <color name="app_btn_color">#F65D57</color>
+    <color name="login_text">#b3a3a3a3</color>
+    <!-- 应用背景色-->
+    <color name="app_background">#fff0f0f0</color>
+    <!-- 应用上层背景色-->
+    <color name="app_background2">#ffffffff</color>
+    <!-- 分割线颜色 -->
+    <color name="app_line">#EEEEEE</color>
+    <color name="app_new_line">#ffcccccc</color>
+    <!-- 底部按钮文字颜色 -->
+    <color name="meau_textcolor_nosel">#ff000000</color>
+    <color name="meau_textcolor_sel">#f13839</color>
+    <!--listview-->
+    <color name="text_middle_color">#666666</color>
+    <color name="text_small_color">#999999</color>
+    <!--城市选择文字颜色-->
+    <color name="citysearch_text">#888888</color>
+    <!--我的团队-->
+    <color name="myteam_search_bg">#ffc9c9ce</color>
+    <color name="myteam_search_text">#ff8e8e93</color>
+    <!--日历-->
+    <color name="calendar_years">#ff8e8e8e</color>
+    <color name="calendar_free">#79a90c</color>
+    <!--图片选择器-->
+    <color name="none_color">#00000000</color>
+    <color name="bule_overlay">#660D92DD</color>
+    <!--引导背景-->
+    <color name="guide_bg">#fff13839</color>
+    <!--任务列表-->
+    <color name="taskitemdetail_tag_text">#ff898989</color>
+    <color name="taskitemdetail_tag_text_sel">#fff5595a</color>
+    <color name="taskitemdetail_tab_line">#fff75253</color>
+    <!--明访任务人员信息-->
+    <color name="brightpersoninfo_test_state1">#f24d0c</color>
+    <color name="brightpersoninfo_test_state2">#0c83f2</color>
+    <color name="brightpersoninfo_test_state3">#5ff4ab</color>
+    <color name="brightpersoninfo_test_state4">#6e0cf2</color>
+    <color name="brightpersoninfo_text_state2">#3875f1</color>
+    <!--扫码任务-->
+    <color name="viewfinder_mask">#000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <color name="status_text">#ffffffff</color>
+    <!--VR设备信息-->
+    <color name="green_20">#f22c2c2c</color>
+    <color name="gray_11">#ff232323</color>
+    <color name="gray_16">#ff8d8d8d</color>
+    <color name="connect_zmer_text_color">#ff787878</color>
+    <!--我的奖励-->
+    <color name="myreward_one">#f5595a</color>
+    <color name="myreward_two">#898989</color>
+    <!--提现明细-->
+    <color name="enchshmentdetail_text">#ff737373</color>
+
+    <color name="mytaskdetail">#25bd57</color>
+    <color name="mytaskgrab">#fcada8</color>
+    <color name="myrewardgray">#888888</color>
+    <color name="myrewardproject">#515151</color>
+    <color name="myrewardstorid">#666666</color>
+    <color name="myrewardstate">#f5595a</color>
+    <color name="myrewardmoney">#f13839</color>
+    <color name="taskgrab_distance2">#f5595a</color>
+    <color name="taskgrab_distance1">#535353</color>
+    <!--<color name="sx_black">#000000</color>-->
+    <!--<color name="sx_white">#ffffff</color>-->
+    <!--我的任务页面定位-->
+    <color name="background1">#d84c00</color>
+    <color name="background2">#16ad1a</color>
+    <color name="background3">#4063f5</color>
+    <color name="selected">#218cff</color>
+    <color name="notselected">#aeaeae</color>
+    <color name="makesure">#f55d57</color>
+    <color name="changetext">#f5595a</color>
+    <color name="cashwithdrawal">#858585</color>
+    <color name="cashwithdrawal2">#c2c2c2</color>
+    <color name="spreaddesc">#848484</color>
+    <color name="spreadmessage">#3e3e3e</color>
+    <color name="feedback">#f75253</color>
+    <color name="sx_half_transprent">#fff9f9f9</color>
+    <color name="my_text">#6f6f6f</color>
+    <color name="background_black">#ff393a3f</color>
+    <color name="experience_select">#ffd677</color>
+    <color name="experience_notselect">#777777</color>
+    <color name="homepage_select">#F65D57</color>
+    <color name="homepage_notselect">#A0A0A0</color>
+    <color name="homepage_search">#F3F3F3</color>
+    <color name="homepage_background">#F1413B</color>
+    <color name="alltask_background">#ECECEC</color>
+    <color name="homepage_city">#231916</color>
+    <color name="dialogupload_title">#231916</color>
+    <color name="dutyfree_background">#F9EFEF</color>
+    <color name="dialog_cancel">#FFC0BD</color>
+    <color name="duty_phonenum">#F3F3F3</color>
+    <color name="camerase_backzz">#3F3F3F</color>
+    <color name="camerase_zz">#939393</color>
+    <color name="camerase_cancel">#666666</color>
+    <color name="dialog_upload3">#F1524C</color>
+    <color name="makesure2">#E3E3E3</color>
+    <color name="citypagebg">#E6E6E6</color>
+    <color name="citycolors">#7C7C7C</color>
+    <color name="newest_bg">#F7F7F7</color>
+    <color name="umeng_content">#333333</color>
+    <color name="invite_my">#FF8883</color>
+    <color name="my_frame">#FFC0C0</color>
+    <color name="mycorps_line">#EEEEEE</color>
+    <color name="corps_bule">#4A90E2</color>
+    <color name="bdp_white">#ffffffff</color>
+    <!--新体验任务图片背景-->
+    <color name="xq_button_huawen">#D8F65D57</color>
+    <color name="xq_button_jidan">#D84EABF7</color>
+    <color name="xq_button_banzhuan">#D8F5A623</color>
+    <color name="xq_button_shi">#D87AC824</color>
+</resources>

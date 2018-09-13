@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_no_outlets"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background2"
+    android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/nooutlets_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.orange.oy.view.AppTitle>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nooutlets_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/homepage_city"
+            android:textSize="@dimen/app_textsize_normal2" />
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/nooutlets_webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"></WebView>
+
+    <LinearLayout
+        android:id="@+id/nooutlets_preview"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:src="@mipmap/drwlb_button_yulan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="任务预览"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="#FFA0A0A0"
+            android:drawablePadding="5dp"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+
+ <!--   <ImageView
+        android:id="@+id/nooutlets_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/task_preview" />-->
+    <TextView
+        android:id="@+id/nooutlets_button"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F65D57"
+        android:gravity="center"
+        android:text="立即申请"
+        android:textColor="#ffffffff"
+        android:textSize="16sp" />
+</LinearLayout>

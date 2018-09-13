@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="@android:color/transparent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/callfindrecode_item_bg">
+
+        <TextView
+            android:id="@+id/call_findrecode_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="SCJ392JFU83DJF5.mp3"
+            android:textColor="#ff231916"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/call_findrecode_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="2018-01-22"
+            android:textColor="#ffA0A0A0"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/call_findrecode_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="860 KB"
+            android:textColor="#ffF65D57"
+            android:textSize="10sp"/>
+    </RelativeLayout>
+</LinearLayout>

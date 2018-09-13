@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background2"
+    android:orientation="vertical"
+    tools:context="com.orange.oy.activity.shakephoto_318.AreaActivity">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/seconderdes_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:layout_weight="1"
+        android:id="@+id/mlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+    <TextView
+        android:id="@+id/citysearch_finish"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/identitysure"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@color/app_background2"
+        android:textSize="@dimen/app_textsize_normal2" />
+
+</LinearLayout>

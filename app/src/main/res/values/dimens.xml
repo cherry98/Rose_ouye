@@ -1,0 +1,102 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="apptitle_height">50dp</dimen>
+    <!-- 内置统一字体-->
+    <dimen name="app_textsize_normal">15sp</dimen>
+    <dimen name="app_textsize_normal1">14sp</dimen>
+    <dimen name="app_textsize_normal2">16sp</dimen>
+    <dimen name="app_textsize_big">18sp</dimen>
+    <dimen name="app_textsize_small">12sp</dimen>
+    <dimen name="app_textsize_small2">11sp</dimen>
+    <dimen name="app_textsize_small3">10sp</dimen>
+
+    <!-- Dialog -->
+    <dimen name="dialog_margin">15dp</dimen>
+    <dimen name="dialog_selecter_height">300dp</dimen>
+    <dimen name="dialog_closetask_height">300dp</dimen>
+    <!--  -->
+    <dimen name="checkreq_children_margin">20dp</dimen>
+    <dimen name="finishet_task_margin">10dp</dimen>
+    <dimen name="taskphoto_gridview_mar2">15dp</dimen>
+    <!--拍照任务示例照片-->
+    <dimen name="taskphoto_gridview_item_mar">10dp</dimen>
+    <dimen name="taskphoto_gridview_mar">20dp</dimen>
+    <!--截屏-->
+    <dimen name="global_screenshot_bg_padding">20dp</dimen>
+    <dimen name="calendar_margin">5dp</dimen>
+    <dimen name="calendartab_height">3dp</dimen>
+    <dimen name="calendar_height">50dp</dimen>
+    <dimen name="dialog_photoselecter_height">100dp</dimen>
+    <!--单题模式-->
+    <dimen name="ouye_progressbarbiaoshi">14dp</dimen>
+    <dimen name="ouye_progressbarmargin">20dp</dimen>
+    <!--属性选择边距-->
+    <dimen name="selectattribute_layout_margin">15dp</dimen>
+    <dimen name="selectattribute_layout_margin_top">15dp</dimen>
+    <dimen name="selectattribute_margin">25dp</dimen>
+    <dimen name="selectattribute_shell">15dp</dimen>
+    <dimen name="selectattribute_height">50dp</dimen>
+    <!--多备注item高-->
+    <dimen name="taskitemphotoY_item_height">80dp</dimen>
+    <!--offlinestore-->
+    <dimen name="view_offlinestore_right_width">80dp</dimen>
+    <!--logoff-->
+    <dimen name="dialog_logoff_height">200dp</dimen>
+    <!--拍照任务右滑高度-->
+    <dimen name="view_takephoto_width">60dp</dimen>
+    <!--VR设备信息-->
+    <dimen name="text_size_large">18.0sp</dimen>
+    <dimen name="text_size_medium">15.0sp</dimen>
+    <!--热门搜索背景用-->
+    <dimen name="searchhot_bg_radius">30dp</dimen>
+    <dimen name="searchhot_bg_marginLeftRight">15dp</dimen>
+    <dimen name="searchhot_tab_height">30dp</dimen>
+    <dimen name="searchhot_tab_marginLeftRight">10dp</dimen>
+    <dimen name="searchhot_tab_text_margLeftRight">10dp</dimen>
+    <dimen name="searchhistory_item_height">76dp</dimen>
+    <dimen name="searchhistory_item_marbottome">10dp</dimen>
+
+    <!--查看大图标签使用-->
+    <dimen name="searchhot_tab_height2">22dp</dimen>
+    <dimen name="searchhot_tab_text_margLeftRight2">1dp</dimen>
+    <dimen name="searchhot_tab_marginLeftRight2">10dp</dimen>
+
+    <!--分享弹窗-->
+    <dimen name="umshare_text_width">100dp</dimen>
+    <dimen name="umshare_height">45dp</dimen>
+    <!--任务说明-->
+    <dimen name="task_desc_textsize">14sp</dimen>
+    <!--战队特长标签-->
+    <dimen name="teamspecialty_label_height">20dp</dimen>
+    <dimen name="teamspecialty_label_marginright">4dp</dimen>
+    <dimen name="teamspecialty_label_del_height">18dp</dimen>
+    <dimen name="teamspecialty_label_del_marginright">1dp</dimen>
+    <dimen name="teamspecialty_label_text_margin">6dp</dimen>
+    <dimen name="teamspecialty_label_margin">10dp</dimen>
+    <dimen name="teamspecialty_label_margintop">12dp</dimen>
+    <!--战队成员列表-->
+    <dimen name="teammember_del_width">54dp</dimen>
+    <!--首页新手任务轮播图-->
+    <dimen name="newhand_padding">15dp</dimen>
+    <!--战队信息tab-->
+    <dimen name="teaminfornation_tabheight">22dp</dimen>
+    <dimen name="teaminfornation_text_margLeftRight">5dp</dimen>
+    <dimen name="teaminfornation_marginLeftRight">7dp</dimen>
+    <!--战队成员-->
+    <dimen name="teammember_label_height">20dp</dimen>
+    <!-- 任务列表-->
+    <dimen name="task_del_width">66dp</dimen>
+    <dimen name="task_del_width2">76dp</dimen>
+    <!-- 刷图分类-->
+    <dimen name="shakephotoview_lrmargin">15dp</dimen>
+    <dimen name="shakephotoview_hspacing">10dp</dimen>
+    <dimen name="shakephotoview_vspacing">5dp</dimen>
+    <dimen name="shakephotoview_point_tmargin">20dp</dimen>
+    <dimen name="shakephotoview_point_bmargin">4dp</dimen>
+    <dimen name="shakephotoview_point_height">18dp</dimen>
+    <dimen name="shakephotoview_theme_height">48dp</dimen>
+    <dimen name="shakephotoview_btheme_textview_lpadding">13dp</dimen>
+</resources>

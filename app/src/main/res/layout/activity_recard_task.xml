@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background2"
+    android:orientation="vertical"
+    tools:context="com.orange.oy.activity.createtask_321.RecardTaskActivity">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/record_task_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mycorps_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务名称"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <EditText
+                    android:id="@+id/recard_task_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入任务名称"
+                    android:maxLength="15"
+                    android:textColor="@color/homepage_city"
+                    android:textColorHint="@color/app_textcolor2"
+                    android:textSize="@dimen/app_textsize_normal1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mycorps_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="任务描述"
+                android:textColor="@color/homepage_city"
+                android:textSize="@dimen/app_textsize_normal1" />
+
+            <EditText
+                android:id="@+id/recard_task_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/unify_input"
+                android:gravity="top|center_vertical"
+                android:hint="请输入对任务执行的详细要求"
+                android:maxLength="300"
+                android:minHeight="90dp"
+                android:textColor="@color/homepage_notselect"
+                android:textColorHint="@color/homepage_notselect"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/app_textsize_small" />
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mycorps_line" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="获取任务执行位置"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <CheckBox
+                    android:checked="true"
+                    android:id="@+id/recard_task_check"
+                    style="@style/setcorps_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mycorps_line" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/recard_task_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/identitysure"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/app_background2"
+        android:textSize="@dimen/app_textsize_normal2" />
+</LinearLayout>

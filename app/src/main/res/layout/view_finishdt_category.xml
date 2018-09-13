@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background2"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/viewfdt_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fff9f9f9"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/task_ico1"/>
+
+        <TextView
+            android:id="@+id/viewfdt_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColor="#ff404040"
+            android:textSize="@dimen/app_textsize_normal"/>
+
+        <ImageView
+            android:id="@+id/viewfdt_category_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/text_spread"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewfdt_category_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="47dp"
+        android:background="@color/app_new_line"/>
+
+    <LinearLayout
+        android:id="@+id/viewfdt_category_other_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+    </LinearLayout>
+</LinearLayout>

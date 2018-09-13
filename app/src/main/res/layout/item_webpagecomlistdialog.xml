@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/app_background2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="70dp">
+
+        <com.orange.oy.view.CircularImageView
+            android:id="@+id/itemwpcld_img"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/itemwpcld_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/itemwpcld_img"
+            android:textColor="#A0A0A0"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/itemwpcld_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="14dp"
+            android:textColor="#A0A0A0"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/itemwpcld_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemwpcld_name"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/itemwpcld_zlayout"
+            android:layout_toRightOf="@+id/itemwpcld_img"
+            android:textColor="#231916"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:id="@+id/itemwpcld_zlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/itemwpcld_time"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/itemwpcld_z"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/webpagecomlist_z1"/>
+
+            <TextView
+                android:id="@+id/itemwpcld_znum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dialog_selecter_height"
+              android:background="@color/app_background2"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/selecter_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/selecter_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="取消"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/selecter_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/selecter_right"
+            android:layout_toRightOf="@+id/selecter_left"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/selecter_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="确定"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/selecter_right2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/x"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fffafafa">
+
+        <ListView
+            android:id="@+id/selecter_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:divider="@color/app_line"
+            android:dividerHeight="1dp"></ListView>
+    </RelativeLayout>
+</LinearLayout>

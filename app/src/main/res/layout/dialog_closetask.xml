@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="20dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/dialog_closetask"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="50dp">
+
+            <TextView
+                android:id="@+id/closetask_text1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="关闭任务包"
+                android:textColor="#333333"
+                android:textSize="@dimen/app_textsize_normal2"/>
+
+            <ImageView
+                android:id="@+id/closetask_close"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/taskpackage_close"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E7E7E7"/>
+
+        <EditText
+            android:id="@+id/closetask_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/unify_input"
+            android:gravity="top"
+            android:hint="请输入备注（100字以内）"
+            android:maxLength="100"
+            android:minHeight="80dp"
+            android:textColor="@color/homepage_notselect"
+            android:textColorHint="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_small"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/closetask_sumbit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/dialog_closetask"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/umeng_content"
+        android:textSize="@dimen/app_textsize_normal2"/>
+</LinearLayout>

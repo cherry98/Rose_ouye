@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/itemnewest_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <com.orange.oy.view.CircularImageView
+            android:id="@+id/itemnewest_img"
+            android:layout_width="16dp"
+            android:layout_height="16dp"/>
+
+        <TextView
+            android:id="@+id/itemnewest_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="138****0988的用户在偶业提现100.00元"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/itemnewest_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03-13 09:11"
+            android:textSize="12sp"/>
+    </LinearLayout>
+</LinearLayout>

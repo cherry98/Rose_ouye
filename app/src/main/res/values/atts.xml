@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义输入框类型-->
+    <declare-styleable name="ClearEditText">
+        <attr name="mode">
+            <enum name="clear" value="0" />
+            <enum name="pwd" value="1" />
+        </attr>
+    </declare-styleable>
+    <!--自定义发送验证码倒计时时间-->
+    <declare-styleable name="GetCode">
+        <attr name="delay_time" format="integer" />
+    </declare-styleable>
+    <!--自定义圆形进度条-->
+    <declare-styleable name="CircleLoadingView">
+        <attr name="progress_color" format="color" />
+    </declare-styleable>
+</resources>

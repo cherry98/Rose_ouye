@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background2"
+    android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/mailaddress_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/alltask_background" />
+
+            <TextView
+                android:id="@+id/mailaddress_theme"
+                style="@style/mycorps_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/mailaddress_sponsor"
+                style="@style/mycorps_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/alltask_background" />
+
+            <TextView
+                android:id="@+id/mailaddress_spize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/homepage_select"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/mailaddress_img"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="15dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/mailaddress_desc"
+                style="@style/mycorps_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/alltask_background" />
+
+            <TextView
+                style="@style/mycorps_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="填写地址" />
+
+            <EditText
+                android:id="@+id/mailaddress_name"
+                android:layout_width="260dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/itemalltask_background"
+                android:hint="收货人姓名"
+                android:paddingLeft="5dp"
+                android:textColor="@color/homepage_notselect"
+                android:textColorHint="@color/homepage_notselect"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/mailaddress_phone"
+                android:layout_width="260dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/itemalltask_background"
+                android:hint="收货人联系电话"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:textColor="@color/homepage_notselect"
+                android:textColorHint="@color/homepage_notselect"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/mailaddress_address"
+                android:layout_width="260dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/itemalltask_background"
+                android:hint="收货人地址"
+                android:paddingLeft="5dp"
+                android:textColor="@color/homepage_notselect"
+                android:textColorHint="@color/homepage_notselect"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/mailaddress_button"
+                android:layout_width="260dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/viewdialogtasklocation1_bg"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/app_background2" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

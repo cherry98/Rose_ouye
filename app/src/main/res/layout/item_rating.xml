@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:gravity="center|left"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/itemrating_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="店内环境" />
+
+    <RatingBar
+        android:id="@+id/itemrating_rating"
+        style="@style/myRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/itemrating_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="0" />
+</LinearLayout>
+

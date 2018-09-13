@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewshakephoto_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/viewshakephoto_classify_point"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/shakephotoview_point_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/shakephotoview_point_bmargin"
+            android:layout_marginTop="@dimen/shakephotoview_point_tmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shakephotoview_theme_height"
+        android:background="#231916">
+
+        <LinearLayout
+            android:id="@+id/viewshakephoto_horizontalScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"/>
+    </HorizontalScrollView>
+</LinearLayout>

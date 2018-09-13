@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/attributshell_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/attributeshell_left"
+        android:layout_width="@dimen/selectattribute_shell"
+        android:layout_height="match_parent"
+        android:background="@mipmap/selatt_bg_01"/>
+
+    <View
+        android:id="@+id/attributeshell_right"
+        android:layout_width="@dimen/selectattribute_shell"
+        android:layout_height="match_parent"
+        android:background="@mipmap/selatt_bg_05"/>
+</LinearLayout>

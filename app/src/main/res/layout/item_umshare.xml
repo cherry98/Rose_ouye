@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/main"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="20dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/dialog_closetask"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/itemshare_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/umshare_height"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/umshare_text_width"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/umeng_wechat"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="@string/um_weixin"
+                    android:textColor="@color/umeng_content"
+                    android:textSize="@dimen/app_textsize_normal2"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/alltask_background"/>
+
+        <LinearLayout
+            android:id="@+id/itemshare_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/umshare_height"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/umshare_text_width"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/umeng_wecircle"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="@string/um_wxcircle"
+                    android:textColor="@color/umeng_content"
+                    android:textSize="@dimen/app_textsize_normal2"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/alltask_background"/>
+
+        <LinearLayout
+            android:id="@+id/itemshare_layout6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/umshare_height"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="@dimen/umshare_text_width"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/umeng_wxmin"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="@string/um_wxmin"
+                    android:textColor="@color/umeng_content"
+                    android:textSize="@dimen/app_textsize_normal2"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/itemshare_layout6_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/alltask_background"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/itemshare_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/umshare_height"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/umshare_text_width"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/umeng_xinlang"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="@string/um_sina"
+                    android:textColor="@color/umeng_content"
+                    android:textSize="@dimen/app_textsize_normal2"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/alltask_background"/>
+
+        <LinearLayout
+            android:id="@+id/itemshare_layout4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/umshare_height"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/umshare_text_width"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/umeng_qq"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="@string/um_qq"
+                    android:textColor="@color/umeng_content"
+                    android:textSize="@dimen/app_textsize_normal2"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/alltask_background"/>
+
+        <LinearLayout
+            android:id="@+id/itemshare_layout5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/umshare_height"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/umshare_text_width"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/umeng_qqzone"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="@string/um_qqzone"
+                    android:textColor="@color/umeng_content"
+                    android:textSize="@dimen/app_textsize_normal2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/itemshare_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/umshare_height"
+        android:background="@drawable/dialog_closetask"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/umeng_content"
+        android:textSize="@dimen/app_textsize_normal2"/>
+</LinearLayout>

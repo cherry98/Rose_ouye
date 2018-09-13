@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background2"
+              android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/setcorps_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/setcorps_captain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="设置战队副队长"
+            android:textColor="@color/homepage_city"
+            android:textSize="@dimen/app_textsize_normal1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/setcorps_captain_set1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/setcorps_backdrop"
+                android:gravity="center_vertical">
+
+                <com.orange.oy.view.CircularImageView
+                    android:id="@+id/setcorps_img1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/setcorps_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/setcorps_img1"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_small"/>
+
+                <TextView
+                    android:id="@+id/setcorps_phone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/setcorps_name1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/setcorps_img1"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_small"/>
+
+                <TextView
+                    android:id="@+id/setcorps_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/setcorps_img1"
+                    android:text="设置战队副队"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_small"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setcorps_captain_set2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/setcorps_backdrop"
+                android:gravity="center_vertical">
+
+                <com.orange.oy.view.CircularImageView
+                    android:id="@+id/setcorps_img2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/setcorps_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/setcorps_img2"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_small"/>
+
+                <TextView
+                    android:id="@+id/setcorps_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/setcorps_img2"
+                    android:text="设置战队副队"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_small"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/setcorps_phone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/setcorps_img2"
+                    android:layout_alignLeft="@+id/setcorps_name2"
+                    android:layout_alignStart="@+id/setcorps_name2"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_small"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/alltask_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="允许队员邀请人员加入战队"
+            android:textColor="@color/homepage_city"
+            android:textSize="@dimen/app_textsize_normal1"/>
+
+        <CheckBox
+            android:id="@+id/setcorps_permission1"
+            style="@style/setcorps_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/alltask_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="是否对所有人公开"
+            android:textColor="@color/homepage_city"
+            android:textSize="@dimen/app_textsize_normal1"/>
+
+        <CheckBox
+            android:id="@+id/setcorps_permission2"
+            style="@style/setcorps_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/alltask_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="是否公开战队获得总金额"
+            android:textColor="@color/homepage_city"
+            android:textSize="@dimen/app_textsize_normal1"/>
+
+        <CheckBox
+            android:id="@+id/setcorps_permission3"
+            style="@style/setcorps_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/alltask_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="广场是否可见"
+            android:textColor="@color/homepage_city"
+            android:textSize="@dimen/app_textsize_normal1"/>
+
+        <CheckBox
+            android:id="@+id/setcorps_permission4"
+            style="@style/setcorps_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/alltask_background"/>
+</LinearLayout>

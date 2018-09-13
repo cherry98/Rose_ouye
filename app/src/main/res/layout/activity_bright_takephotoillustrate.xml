@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/takephotoill_title_bright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/taskphoto_gridview_mar"
+        android:paddingRight="@dimen/taskphoto_gridview_mar"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/takephoto_button_bright"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/takephoto_name_bright"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/app_textcolor"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/takephoto_nameline_bright"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/takephoto_name_bright"
+                android:layout_marginTop="20dp"
+                android:background="@color/app_line" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/takephoto_nameline_bright">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/takephoto_desc_bright"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#ff535353"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/shili"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="示例:"
+                        android:textColor="@color/app_textcolor"
+                        android:textSize="17sp" />
+
+                    <GridView
+                        android:id="@+id/takephotoill_gridview_bright"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="@dimen/taskphoto_gridview_item_mar"
+                        android:listSelector="#00000000"
+                        android:numColumns="3"
+                        android:verticalSpacing="@dimen/taskphoto_gridview_item_mar" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/takephoto_button_bright"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/login_button"
+            android:text="下一步"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/app_textsize_big" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.orange.oy.view.ScrollerNumberPicker
+        android:id="@+id/list_bottom_wheelview"
+        xmlns:su="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#ffffffff"
+        android:gravity="center"
+        su:itemNumber="5"
+        su:lineColor="@color/app_line"
+        su:maskHight="22dp"
+        su:noEmpty="true"
+        su:normalTextColor="@color/app_textcolor"
+        su:normalTextSize="@dimen/app_textsize_normal"
+        su:selecredTextColor="@color/colorPrimaryDark"
+        su:selecredTextSize="@dimen/app_textsize_big"
+        su:unitHight="50dp"/>
+</LinearLayout>

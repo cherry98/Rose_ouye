@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background2"
+              android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/taskitdt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/carry_layout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/taskitemdetail_tab_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="待执行"
+                android:textColor="@color/changetext"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/taskitemdetail_tab_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="待提交"
+                android:textColor="@color/myreward_two"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tabline_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/carry_layout"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/taskitemdetail_tab_left_line"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@mipmap/selected_column"/>
+
+            <ImageView
+                android:id="@+id/taskitemdetail_tab_right_line"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@mipmap/selected_column"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/alltask_background"/>
+
+        <LinearLayout
+            android:id="@+id/taskitdt_recode_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/itemdetail_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/tape_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="任务执行"
+                android:textColor="@color/app_background2"
+                android:textSize="@dimen/app_textsize_normal1"/>
+
+            <TextView
+                android:id="@+id/taskitdt_recode_state"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="进行中..."
+                android:textColor="@color/app_background2"
+                android:textSize="@dimen/app_textsize_small"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/taskitdt_recode_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/itemdetail_background1"
+                android:text="开始"
+                android:textColor="@color/app_background2"
+                android:textSize="@dimen/app_textsize_small3"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffffff">
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                xmlns:ptr="http://schemas.android.com/apk/res/com.orange.oy"
+                android:id="@+id/taskitdt_listview_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="7dp"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                ptr:ptrAnimationStyle="flip"
+                ptr:ptrDrawable="@drawable/default_ptr_flip"
+                ptr:ptrHeaderSubTextColor="@color/text_small_color"
+                ptr:ptrHeaderTextColor="@color/text_middle_color"/>
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                xmlns:ptr="http://schemas.android.com/apk/res/com.orange.oy"
+                android:id="@+id/taskitdt_listview_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="7dp"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                ptr:ptrAnimationStyle="flip"
+                ptr:ptrDrawable="@drawable/default_ptr_flip"
+                ptr:ptrHeaderSubTextColor="@color/text_small_color"
+                ptr:ptrHeaderTextColor="@color/text_middle_color"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/tabline_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@mipmap/line_shadow"/>
+
+        <TextView
+            android:id="@+id/taskitdt_stroe_ablum"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="临时相册"
+            android:textColor="@color/homepage_select"
+            android:textSize="@dimen/app_textsize_normal2"/>
+
+        <TextView
+            android:id="@+id/taskitdt_upload_store"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/identitysure"
+            android:gravity="center"
+            android:text="提交审核"
+            android:textColor="@color/app_background2"
+            android:textSize="@dimen/app_textsize_normal2"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>

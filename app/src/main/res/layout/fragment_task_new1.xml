@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_background2"
+                android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/titlenew_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:id="@+id/tasknew_citysearch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/city_location"/>
+
+            <TextView
+                android:id="@+id/tasknew_distric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="城市"
+                android:textColor="#231916"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/setting_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/task_message"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/titlenew_name"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_below="@+id/titlenew_layout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/search_edit_bg"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/search_left_ico"/>
+
+        <TextView
+            android:id="@+id/tasknew_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:gravity="left|center"
+            android:hint="@string/search_text"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="@color/homepage_notselect"
+            android:textColorHint="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_small"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/unsuccess_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/grrw_image2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载中……"
+            android:textColor="@color/homepage_city"
+            android:textSize="@dimen/app_textsize_normal1"/>
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tasknew_listview_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlenew_name"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="3dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="7dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrHeaderSubTextColor="@color/text_small_color"
+        ptr:ptrHeaderTextColor="@color/text_middle_color"/>
+</RelativeLayout>

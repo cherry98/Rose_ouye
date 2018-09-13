@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:gravity="center_vertical">
+
+        <com.orange.oy.view.CircularImageView
+            android:id="@+id/itemessage_img"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/itemessage_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/itemessage_img"
+            android:textColor="@color/homepage_city"
+            android:textSize="@dimen/app_textsize_normal2" />
+
+        <TextView
+            android:id="@+id/itemessage_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemessage_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/itemessage_img"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_normal1" />
+
+        <TextView
+            android:id="@+id/itemessage_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_small" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/alltask_background" />
+</LinearLayout>

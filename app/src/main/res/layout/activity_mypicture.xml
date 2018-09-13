@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/mypicture_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.orange.oy.view.StaggeredLoadGridView
+        xmlns:ptr="http://schemas.android.com/apk/res/com.orange.oy"
+        android:id="@+id/mypicture_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ececec"
+        app:column_count="2"
+        app:item_margin="10dp"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrHeaderSubTextColor="@color/text_small_color"
+        ptr:ptrHeaderTextColor="@color/text_middle_color"/>
+
+    <com.orange.oy.network.NetworkView
+        android:id="@+id/mypicture_networkview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:layout_weight="1"
+        android:visibility="gone"/>
+</LinearLayout>

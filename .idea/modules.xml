@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_pulltorefresh/lib_pulltorefresh.iml" filepath="$PROJECT_DIR$/lib_pulltorefresh/lib_pulltorefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ouye3.21.iml" filepath="$PROJECT_DIR$/ouye3.21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pickerview/pickerview.iml" filepath="$PROJECT_DIR$/pickerview/pickerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sobotsdk/sobotsdk.iml" filepath="$PROJECT_DIR$/sobotsdk/sobotsdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/staggeredgridviewlibrary/staggeredgridviewlibrary.iml" filepath="$PROJECT_DIR$/staggeredgridviewlibrary/staggeredgridviewlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wheelview/wheelview.iml" filepath="$PROJECT_DIR$/wheelview/wheelview.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.orange.oy.activity.black.OutSurveyTakephotoNActivity">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/photon_title_outsurvey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/app_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background2"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/photon_name_outsurvey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#333333"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/photon_bg1_outsurvey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="15dp">
+
+                <com.orange.oy.view.MyImageView
+                    android:id="@+id/photon_video1_outsurvey"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" />
+
+                <ImageView
+                    android:id="@+id/photon_video2_outsurvey"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/app_background"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/tianjiayuxi"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/photon_video3_outsurvey"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/app_background"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/tianjiayuxi"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/photon_txt_outsurvey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="备注:"
+                android:textColor="@color/app_textcolor"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/photon_edit_outsurvey"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/unify_input"
+                android:gravity="top|left"
+                android:hint="请输入备注"
+                android:padding="10dp"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_button"
+        android:text="确定"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/app_textsize_big"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/photon_button_outsurvey"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ff4a57"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/appp_titletext"
+        android:textSize="14sp" />
+</LinearLayout>

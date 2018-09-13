@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/withdraw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/withdraw_backdrop"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone">
+
+        <com.orange.oy.view.CircularImageView
+            android:id="@+id/withdraw_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/withdraw_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_small"/>
+
+        <TextView
+            android:id="@+id/withdraw_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_small"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/recommend_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/withdraw_layout"
+        android:layout_marginTop="5dp"
+        android:clipChildren="false"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/recommend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="推荐任务"
+            android:textColor="@color/homepage_city"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/recommend2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recommend"
+            android:text="开启任务领取丰厚资金"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_small"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tasknew_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/recommend2"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:clipChildren="false"
+            android:visibility="gone"></android.support.v4.view.ViewPager>
+
+        <com.orange.oy.galllery.ZQImageViewRoundOval
+            android:id="@+id/recommendtask_img"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/tasknew_viewpager"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/newhand_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recommend_task"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/newhand_padding"
+        android:paddingRight="@dimen/newhand_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="新手任务"
+            android:textColor="@color/homepage_city"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="万元豪礼送不停，挣钱从新手任务开始，先到先得"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_small"/>
+
+        <com.orange.oy.galllery.ZQImageViewRoundOval
+            android:id="@+id/newhand_taskimg"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/seizeseat2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/all_task"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/newhand_task"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="全部任务"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="逛街随手一拍就能赚零花钱"
+                    android:textColor="@color/homepage_notselect"
+                    android:textSize="@dimen/app_textsize_small"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/task_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@mipmap/task_location2"
+                android:text="地图查看"
+                android:textColor="@color/homepage_city"
+                android:textSize="10sp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

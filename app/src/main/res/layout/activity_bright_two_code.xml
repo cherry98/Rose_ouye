@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/bright_title_twocode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/brighttwocode_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="43dp"
+        android:gravity="center"
+        android:text="CH1875"
+        android:textColor="#0f0f0f"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/brighttwocode_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="伊犁旭驰"
+        android:textColor="#0f0f0f"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/brighttwocode_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="伊宁市巴彦岱镇请伊高速路口沿218国道向西200右转"
+        android:textColor="#5a5a5a"
+        android:textSize="13dp" />
+
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="45dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/erweima" />
+
+        <ImageView
+            android:id="@+id/brighttwocode_img"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/twoweima" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="您需要出示此二维码至被访网点负责人"
+        android:textColor="#454548"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="请对方用微信扫一扫功能识别二维码"
+        android:textColor="#454548"
+        android:textSize="15dp" />
+</LinearLayout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/item_teammember_main"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/app_background2"
+              android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/item_teammember_rightbg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:id="@+id/item_teammember_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_teammember_bg">
+
+            <com.orange.oy.view.CircularImageView
+                android:id="@+id/item_teammember_ico"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="12dp"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/item_teammember_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@+id/item_teammember_ico"
+                android:text="张婷"
+                android:textColor="#231916"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/item_teammember_sex"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignBottom="@+id/item_teammember_name"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/item_teammember_name"/>
+
+            <ImageView
+                android:id="@+id/item_teammember_identity"
+                android:layout_width="30dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/item_teammember_name"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/item_teammember_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_teammember_name"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/item_teammember_ico"
+                android:text="年龄：29 电话：18345766677"
+                android:textColor="#A0A0A0"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/item_teammember_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_teammember_phone"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/item_teammember_ico"
+                android:text="区域：辽宁省-大连市"
+                android:textColor="#A0A0A0"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/item_teammember_address2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_teammember_address"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/item_teammember_ico"
+                android:text="常去地址：国贸"
+                android:textColor="#A0A0A0"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/item_teammember_freetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_teammember_address2"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/item_teammember_ico"
+                android:text="空闲时间："
+                android:textColor="#A0A0A0"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/item_teammember_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_teammember_freetime"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/item_teammember_ico"
+                android:text="队长标签"
+                android:textColor="#4A90E2"
+                android:textSize="14sp"/>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_teammember_remark"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="12dp"
+                android:background="#EEEEEE"/>
+
+            <LinearLayout
+                android:id="@+id/item_teammember_data"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_below="@+id/line"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="58dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/item_teammember_task1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="35"
+                        android:textColor="#F65D57"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="完成任务数量"
+                        android:textColor="#A0A0A0"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="58dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/item_teammember_task2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="97%"
+                        android:textColor="#F65D57"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="任务合格率"
+                        android:textColor="#A0A0A0"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_teammember_data"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="#EEEEEE"/>
+
+            <com.orange.oy.view.FlowLayoutView
+                android:id="@+id/item_teammember_labels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:visibility="visible"
+                app:height_space="10dp"
+                app:width_space="10dp">
+
+                <TextView
+                    android:id="@+id/item_teammember_label_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@drawable/item_teammember_label_bg"
+                    android:gravity="center"
+                    android:text="这里最多能显示十个字"
+                    android:textColor="#F65D57"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/item_teammember_label_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@drawable/item_teammember_label_bg"
+                    android:gravity="center"
+                    android:text="这里最多能显示十个字"
+                    android:textColor="#F65D57"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/item_teammember_label_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@drawable/item_teammember_label_bg"
+                    android:gravity="center"
+                    android:text="这里最多能显示十个字"
+                    android:textColor="#F65D57"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/item_teammember_label_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@drawable/item_teammember_label_bg"
+                    android:gravity="center"
+                    android:text="这里最多能显示十个字"
+                    android:textColor="#F65D57"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/item_teammember_label_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@drawable/item_teammember_label_bg"
+                    android:gravity="center"
+                    android:text="这里最多能显示十个字"
+                    android:textColor="#F65D57"
+                    android:textSize="12sp"/>
+            </com.orange.oy.view.FlowLayoutView>
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_teammember_labels"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="#EEEEEE"/>
+
+            <TextView
+                android:id="@+id/item_teammember_note"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/line3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="备注"
+                android:textColor="#A0A0A0"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/item_teammember_del"
+        android:layout_width="@dimen/teammember_del_width"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/item_teammember_del_bg"
+        android:gravity="center"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:textSize="14sp"
+        android:visibility="visible"/>
+</LinearLayout>

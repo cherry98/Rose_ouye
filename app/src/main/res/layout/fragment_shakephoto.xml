@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 相对布局，放置两个按钮 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tc="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/shakephoto_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- 显示预览图形 -->
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/shakephoto_pre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/shakephoto_light"
+            android:layout_width="50dp"
+            android:layout_height="58dp"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/shake_ico8"/>
+
+        <LinearLayout
+            android:id="@+id/shakephoto_toptab"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_r_100_stroke_ffffffff"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/shakephoto_free"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/change_task2_1"
+                android:gravity="center"
+                android:text="自由拍"
+                android:textColor="@color/app_background2"
+                android:textSize="@dimen/app_textsize_normal2"/>
+
+            <TextView
+                android:id="@+id/shakephoto_scene"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="场景拍"
+                android:textColor="@color/app_background2"
+                android:textSize="@dimen/app_textsize_normal2"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/shakephoto_spin"
+            android:layout_width="64dp"
+            android:layout_height="58dp"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/shake_ico7"/>
+
+        <ImageView
+            android:id="@+id/shakephoto_classify1"
+            android:layout_width="130dp"
+            android:layout_height="68dp"
+            android:layout_above="@+id/shakephoto_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="76dp"
+            android:src="@mipmap/shake_ico6"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/shakephoto_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3F3F3F"
+            android:visibility="gone"/>
+
+        <com.orange.oy.view.FlowLayoutView
+            android:id="@+id/shakephoto_labels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shakephoto_labels_obs"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            app:height_space="10dp"
+            app:width_space="6dp"/>
+
+        <LinearLayout
+            android:id="@+id/shakephoto_labels_obs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shakephoto_layout"
+            android:layout_marginBottom="201dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_r_16_col_40ffffff"
+            android:minHeight="27dp"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/shakephoto_labels_obs_edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入您对此图片的评论"
+                android:maxLines="3"
+                android:minHeight="21dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/shakephoto_labels_obs_sumbit"
+                android:layout_width="56dp"
+                android:layout_height="21dp"
+                android:layout_gravity="top"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/bg_r_11_col_fff65d57"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shakephoto_zzlo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shakephoto_layout"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/shakephoto_zz"
+                android:layout_width="80dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/shakephoto_bg1"
+                android:gravity="center"
+                android:text="黑屏拍摄"
+                android:textColor="#939393"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/shakephoto_location2_ico"
+                android:layout_width="13dp"
+                android:layout_height="24dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/shake_ico5"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/shakephoto_location2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="220dp"
+                android:minWidth="50dp"
+                android:textColor="@android:color/white"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <com.orange.oy.view.ShakephotoView
+            android:id="@+id/shakephoto_shakephotoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shakephoto_layout"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"/>
+        <!-- 拍照按钮 -->
+        <RelativeLayout
+            android:id="@+id/shakephoto_layout"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#3F3F3F">
+
+            <ImageView
+                android:id="@+id/takepicture"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/shake_ico2"
+                android:visibility="gone"/>
+
+            <com.orange.oy.view.CompletedView
+                android:id="@+id/takepicture2"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                tc:circleColor="#F8EAEA"
+                tc:circleMargin="2dp"
+                tc:radius="21dp"
+                tc:ringBgColor="#F8EAEA"
+                tc:ringColor="#F65D57"
+                tc:strokeWidth="5dp"/>
+
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/picturer_1"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/picturer_2"
+                android:gravity="center"
+                android:maxWidth="70dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:text="分类"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/picturer_2"
+                android:layout_width="10dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/shake_ico1"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/picturer_1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/picturer_2_2"
+                android:gravity="center"
+                android:paddingRight="8dp"
+                android:text="返回"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/picturer_2_2"
+                android:layout_width="16dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/shake_ico9"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/picturer_1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/picturer_2_1"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:text="重拍"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/picturer_2_1"
+                android:layout_width="10dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/shake_ico1_1"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.orange.oy.network.NetworkView
+        android:id="@+id/shakephoto_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+</RelativeLayout>

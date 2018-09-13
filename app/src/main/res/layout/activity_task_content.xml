@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background2"
+              android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/taskcontent_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/taskcontent_num"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/dutyfree_background"
+        android:gravity="center"
+        android:text="可发布的任务总量：0/15"
+        android:textColor="@color/homepage_notselect"
+        android:textSize="@dimen/app_textsize_normal1"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/taskcontent_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="7dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"/>
+
+    <TextView
+        android:id="@+id/taskcontent_sumbit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/identitysure"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@color/app_background2"
+        android:textSize="@dimen/app_textsize_normal2"
+        android:visibility="gone"/>
+</LinearLayout>

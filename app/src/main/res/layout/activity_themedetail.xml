@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background2"
+              android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/themedetail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ececec"/>
+
+    <RelativeLayout
+        android:id="@+id/themedetail_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="13dp">
+
+        <ImageView
+            android:id="@+id/themedetail_img"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/themedetail_img_layout"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/themedetail_img_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F65D57"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="我分享的"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/themedetail_top_s_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/themedetail_img"
+            android:background="@drawable/bg_r_0_stroke_ffececec"/>
+
+        <View
+            android:id="@+id/themedetail_top_c_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/themedetail_top_s_line"
+            android:layout_alignRight="@+id/themedetail_top_s_line"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/themedetail_img"
+            android:background="#ECECEC"/>
+
+        <TextView
+            android:id="@+id/themedetail_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/themedetail_top_c_line"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/themedetail_img"
+            android:gravity="center_vertical"
+            android:text="还需要请"
+            android:textColor="#646464"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/themedetail_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/themedetail_top_c_line"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/themedetail_item1"
+            android:gravity="center_vertical"
+            android:text="剩余天"
+            android:textColor="#646464"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/themedetail_item4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/themedetail_top_c_line"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/themedetail_1_sponsor"
+            android:layout_toRightOf="@+id/themedetail_img"
+            android:gravity="center_vertical"
+            android:text="红包总金额"
+            android:textColor="#646464"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/themedetail_1_ask"
+            android:layout_width="36dp"
+            android:layout_height="22dp"
+            android:layout_alignRight="@+id/themedetail_top_s_line"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/bg_r_11_col_fff65d57"
+            android:gravity="center"
+            android:text="邀请"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/themedetail_1_sponsor"
+            android:layout_width="36dp"
+            android:layout_height="22dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/themedetail_top_s_line"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/bg_r_11_col_fff65d57"
+            android:gravity="center"
+            android:text="赞助"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"/>
+
+        <LinearLayout
+            android:id="@+id/themedetail_123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/themedetail_123"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/themedetail_my123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:text="我的排名"
+                android:textColor="#646464"
+                android:textSize="10sp"
+                android:visibility="visible"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/themedetail_item3"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="活动大奖"
+        android:textColor="#646464"
+        android:textSize="12sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ececec"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="排序方式"
+            android:textColor="#231916"
+            android:textSize="14sp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/themedetail_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="排名"
+                android:textColor="#A0A0A0"
+                android:textSize="14sp"/>
+
+            <View
+                android:id="@+id/themedetail_rank_line"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/themedetail_rank"
+                android:background="#F65D57"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/themedetail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="时间"
+                android:textColor="#A0A0A0"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/themedetail_time_r"
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@+id/themedetail_time"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/themedetail_timer"/>
+
+            <View
+                android:id="@+id/themedetail_time_line"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/themedetail_time"
+                android:background="#F65D57"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ececec"/>
+
+    <com.orange.oy.view.StaggeredLoadGridView
+        xmlns:ptr="http://schemas.android.com/apk/res/com.orange.oy"
+        android:id="@+id/staggeredloadgridview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        app:column_count="2"
+        app:item_margin="10dp"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrHeaderSubTextColor="@color/text_small_color"
+        ptr:ptrHeaderTextColor="@color/text_middle_color"/>
+
+    <com.orange.oy.network.NetworkView
+        android:id="@+id/themedetail_network"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="80dp"
+        android:layout_weight="1"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/themedetail_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F65D57"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/themedetail_button_img"
+            android:layout_width="28dp"
+            android:layout_height="23dp"
+            android:src="@mipmap/themedetail_task"/>
+
+        <TextView
+            android:id="@+id/themedetail_button_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动已结束"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>

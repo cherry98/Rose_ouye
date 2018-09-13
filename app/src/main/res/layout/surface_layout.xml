@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 显示预览图形 -->
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!-- 相对布局，放置两个按钮 -->
+
+    <com.orange.oy.view.IdentityView
+        android:id="@+id/identityview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.orange.oy.view.IdentityCommpanyView
+        android:id="@+id/identityCommpanyview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/takepicture_spin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="30dp"
+            android:src="@mipmap/spin_camerase"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/takepicture_zz"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_above="@+id/takepicture_layout"
+            android:layout_centerHorizontal="true"
+            android:background="@color/camerase_backzz"
+            android:gravity="center"
+            android:text="开启遮罩"
+            android:textColor="@color/camerase_zz"
+            android:textSize="@dimen/app_textsize_normal" />
+        <!-- 拍照按钮 -->
+        <RelativeLayout
+            android:id="@+id/takepicture_layout"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/camerase_backzz"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/takepicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/camera_button1" />
+
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="60dp"
+                android:layout_height="59dp"
+                android:layout_marginLeft="20dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/takepicture_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/takepicture_back"
+                android:text="0张"
+                android:textColor="@color/camerase_zz"
+                android:textSize="@dimen/app_textsize_normal2"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/takepicture_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/takepicture_cancel"
+                android:text="取消"
+                android:textColor="@color/camerase_zz"
+                android:textSize="@dimen/app_textsize_normal2"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

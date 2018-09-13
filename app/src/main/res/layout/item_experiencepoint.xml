@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.orange.oy.view.CircularImageView
+        android:id="@+id/itemepoint_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/grxx_icon_mrtx"
+        android:scaleType="centerCrop" />
+
+    <RatingBar
+        android:id="@+id/itemepoint_ratingbar"
+        style="@style/myRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/itemepoint_img"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="1"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/itemepoint_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/itemepoint_ratingbar"
+        android:text="0"
+        android:visibility="gone" />
+
+    <com.orange.oy.view.FlowLayoutView
+        android:id="@+id/itemepoint_flowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemepoint_ratingbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/itemepoint_img"
+        android:visibility="gone"
+        app:height_space="10dp"
+        app:width_space="10dp"></com.orange.oy.view.FlowLayoutView>
+
+    <TextView
+        android:id="@+id/itemepoint_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemepoint_img"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:text="本页面停留时间超过五分钟后方可点击“我要离店”按钮，5分钟之内点击按钮提示“亲，您在店里的时间太短，再呆一会儿吧~~！" />
+
+    <TextView
+        android:id="@+id/itemepoint_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/itemepoint_content"
+        android:layout_marginRight="10dp"
+        android:text="2017-05-25" />
+
+    <com.orange.oy.view.MyGridView
+        android:id="@+id/itemepoint_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemepoint_time"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/itemepoint_img"
+        android:horizontalSpacing="10dp"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"></com.orange.oy.view.MyGridView>
+</RelativeLayout>

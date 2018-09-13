@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff0000"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+    <com.orange.oy.view.ThemeDetailItem
+        android:id="@+id/item_themedetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/item_themedetail_sel"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="3dp"
+        android:src="@mipmap/image_uncheck"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_alignBottom="@+id/item_themedetail"
+        android:background="#59000000"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/item_themedetail_b1"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginTop="1dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/themedetail_b1"/>
+
+            <TextView
+                android:id="@+id/item_themedetail_b1_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/item_themedetail_b3"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginTop="2dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/themedetail_b3"/>
+
+            <TextView
+                android:id="@+id/item_themedetail_b3_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

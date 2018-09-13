@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background2"
+              android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/mycorps_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.orange.oy.view.AppTitle>
+
+    <com.orange.oy.view.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlenew_name">
+
+        <include layout="@layout/refresh_head"/>
+
+        <com.orange.oy.view.ObservableScrollView
+            android:id="@+id/scv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="我组建的战队"
+                            android:textColor="@color/homepage_city"
+                            android:textSize="@dimen/app_textsize_normal2"
+                            android:textStyle="bold"/>
+
+                        <LinearLayout
+                            android:id="@+id/mycrops_create"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/itemalltask_background"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="21dp"
+                                android:layout_height="21dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/corps_add"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dp"
+                                android:text="创建战队"
+                                android:textColor="@color/homepage_select"
+                                android:textSize="@dimen/app_textsize_normal"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <ListView
+                            android:id="@+id/create_listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:divider="@null"
+                            android:dividerHeight="10dp"/>
+
+                        <LinearLayout
+                            android:id="@+id/mycrops_create_ly"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/corps_image"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="您还没有创建战队哦，快点击上方创\n建战队，创建自己的战队吧。"
+                                android:textColor="@color/homepage_city"
+                                android:textSize="@dimen/app_textsize_small"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/alltask_background"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="我加入的战队"
+                            android:textColor="@color/homepage_city"
+                            android:textSize="@dimen/app_textsize_normal2"
+                            android:textStyle="bold"/>
+
+                        <LinearLayout
+                            android:id="@+id/mycrops_apply"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/itemalltask_background"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="21dp"
+                                android:layout_height="21dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/corps_add"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dp"
+                                android:text="申请加入战队"
+                                android:textColor="@color/homepage_select"
+                                android:textSize="@dimen/app_textsize_normal"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <ListView
+                            android:id="@+id/apply_listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:divider="@null"
+                            android:dividerHeight="10dp"/>
+
+                        <LinearLayout
+                            android:id="@+id/mycrops_apply_ly"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/corps_image"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="您还没有申请加入战队哦，快点击上方\n申请加入战队，加入优秀的战队吧。"
+                                android:textColor="@color/homepage_city"
+                                android:textSize="@dimen/app_textsize_small"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </com.orange.oy.view.ObservableScrollView>
+
+        <include layout="@layout/load_more"></include>
+    </com.orange.oy.view.PullToRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/teamspecialty_select_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/teamspecialty_unselect_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/teamspecialty_label_margintop"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/teamspecialty_other_layout"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="@dimen/teamspecialty_label_margintop"
+        android:background="@drawable/teamspecialty_edittext_bg"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/teamspecialty_other_edit"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginRight="50dp"
+            android:background="@null"
+            android:hint="标签长度不超过10个字"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#231916"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/teamspecialty_other_button"
+            android:layout_width="44dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/teamspecialty_edittext_button_bg"
+            android:gravity="center"
+            android:text="添加"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/dialog_upload"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="任务类型"
+            android:textColor="@color/homepage_city"
+            android:textSize="@dimen/app_textsize_normal2" />
+
+        <ImageView
+            android:id="@+id/dgtasktype_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/close_dialog" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/alltask_background" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:text="请从以下类型中选择添加的任务类型"
+        android:textColor="@color/homepage_city"
+        android:textSize="@dimen/app_textsize_normal1" />
+
+    <LinearLayout
+        android:id="@+id/dgtasktype_photo_ly"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/itemalltask_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/take_photo" />
+
+        <TextView
+            android:id="@+id/dgtasktype_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="拍照任务"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_normal1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dgtasktype_viedo_ly"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/itemalltask_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/take_viedo" />
+
+        <TextView
+            android:id="@+id/dgtasktype_viedo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="视频任务"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_normal1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dgtasktype_tape_ly"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/itemalltask_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/take_tape" />
+
+        <TextView
+            android:id="@+id/dgtasktype_tape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="录音任务"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_normal1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dgtasktype_record_ly"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/itemalltask_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/take_record" />
+
+        <TextView
+            android:id="@+id/dgtasktype_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="问卷任务"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_normal1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dgtasktype_exp_ly"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/itemalltask_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/take_exp" />
+
+        <TextView
+            android:id="@+id/dgtasktype_exp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="网店体验任务"
+            android:textColor="@color/homepage_notselect"
+            android:textSize="@dimen/app_textsize_normal1" />
+    </LinearLayout>
+</LinearLayout>

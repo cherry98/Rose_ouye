@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimaryDark2"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="任务"
+            android:textColor="@color/appp_titletext"
+            android:textSize="@dimen/app_textsize_big"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="13dp"
+        android:layout_weight="1">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tasklg_viewpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tasklg_radioGroup"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"/>
+
+        <RadioGroup
+            android:id="@+id/tasklg_radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/tasklg_rb1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/task_redio_bg"
+                android:ellipsize="marquee"/>
+
+            <RadioButton
+                android:id="@+id/tasklg_rb2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="7dp"
+                android:button="@null"
+                android:drawableTop="@drawable/task_redio_bg"
+                android:ellipsize="marquee"/>
+
+            <RadioButton
+                android:id="@+id/tasklg_rb3"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="7dp"
+                android:button="@null"
+                android:drawableTop="@drawable/task_redio_bg"
+                android:ellipsize="marquee"/>
+
+            <RadioButton
+                android:id="@+id/tasklg_rb4"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="7dp"
+                android:button="@null"
+                android:drawableTop="@drawable/task_redio_bg"
+                android:ellipsize="marquee"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tasklg_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_button"
+        android:gravity="center"
+        android:text="@string/my_login"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/app_textsize_big"/>
+</LinearLayout>

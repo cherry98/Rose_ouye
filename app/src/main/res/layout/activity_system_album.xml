@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background2">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/systemalbum_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:id="@+id/system_myGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/systemok_button"
+        android:layout_below="@+id/systemalbum_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:horizontalSpacing="9dp"
+        android:listSelector="@null"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="9dp" />
+
+    <Button
+        android:id="@+id/systemok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/bottom_button"
+        android:text="确定"
+        android:textColor="@color/makesure"
+        android:textSize="@dimen/app_textsize_normal" />
+
+    <ProgressBar
+        android:id="@+id/system_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

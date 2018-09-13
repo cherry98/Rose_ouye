@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/app_background2"
+              android:minHeight="100dp"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_background2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/task_list_ico"/>
+
+        <TextView
+            android:id="@+id/item_tasksch_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="项目名称"
+            android:textColor="@color/app_textcolor"
+            android:textSize="@dimen/app_textsize_big"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/aboutus_ico3"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/app_line"/>
+
+    <TextView
+        android:id="@+id/item_tasksch_item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="15dp"
+        android:text="负责店铺总量：312341234家"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/app_textsize_big"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="15dp"
+        android:text="其中："
+        android:textColor="@color/app_textcolor"
+        android:textSize="@dimen/app_textsize_normal"/>
+
+    <TextView
+        android:id="@+id/item_tasksch_item2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="3dp"
+        android:text="执行完成数量："
+        android:textColor="@color/app_textcolor"
+        android:textSize="@dimen/app_textsize_normal"/>
+
+    <TextView
+        android:id="@+id/item_tasksch_item3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="3dp"
+        android:text="资料回收数量："
+        android:textColor="@color/app_textcolor"
+        android:textSize="@dimen/app_textsize_normal"/>
+
+    <TextView
+        android:id="@+id/item_tasksch_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="3dp"
+        android:text="项目完成日期："
+        android:textColor="@color/app_textcolor"
+        android:textSize="@dimen/app_textsize_normal"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/app_line"/>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/itemcorpsnotice_move"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background2"
+              android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:id="@+id/itemcorpsnotice_bg"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/itemcorpsnotice_bg1"
+            android:gravity="center_vertical">
+
+            <com.orange.oy.view.CircularImageView
+                android:id="@+id/itemcorpsnotice_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/itemcorpsnotice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/itemcorpsnotice_time"
+                android:layout_toRightOf="@+id/itemcorpsnotice_img"
+                android:textColor="@color/homepage_city"
+                android:textSize="@dimen/app_textsize_small"/>
+
+            <TextView
+                android:id="@+id/itemcorpsnotice_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/homepage_city"
+                android:textSize="@dimen/app_textsize_small"/>
+
+            <TextView
+                android:id="@+id/itemcorpsnotice_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemcorpsnotice_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/itemcorpsnotice_img"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="公告摘要"
+                android:textColor="@color/homepage_notselect"
+                android:textSize="@dimen/app_textsize_small"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/itemcorpsnotice_hint"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="right"
+            android:background="@drawable/solid_circle"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/itemcorpsnotice_delete"
+        android:layout_width="50dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/itemcorpsnotice_delete"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="@color/app_background2"
+        android:textSize="@dimen/app_textsize_normal1"/>
+</LinearLayout>

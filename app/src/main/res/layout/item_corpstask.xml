@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_background2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/item_corpstask_bg">
+
+        <View
+            android:id="@+id/itemcorpstask_line"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/itemcorpstask_item4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/itemcorpstask_item1"
+            android:layout_marginBottom="-10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="-10dp"
+            android:background="#ECECEC"/>
+
+        <ImageView
+            android:id="@+id/itemcorpstask_ico"
+            android:layout_width="60dp"
+            android:layout_height="21dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/itemcorpstask_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/itemcorpstask_line"
+            android:text="寻找牙膏促销员"
+            android:textColor="#231916"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/itemcorpstask_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="￥8600"
+            android:textColor="#F65D57"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/itemcorpstask_buttong"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/itemcorpstask_money"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/item_corpstask_buttong_bg"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="分配"
+            android:textColor="#F65D57"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/itemcorpstask_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemcorpstask_item1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/itemcorpstask_line"
+            android:text="商家：阿里巴巴"
+            android:textColor="#A0A0A0"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/itemcorpstask_item3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemcorpstask_item2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/itemcorpstask_line"
+            android:textColor="#A0A0A0"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <android.support.percent.PercentRelativeLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/itemcorpstask_type_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemcorpstask_item3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/itemcorpstask_line">
+
+            <TextView
+                android:id="@+id/itemcorpstask_type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                app:layout_widthPercent="33%"/>
+
+
+            <TextView
+                android:id="@+id/itemcorpstask_type2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/itemcorpstask_type1"
+                android:textSize="12sp"
+                app:layout_widthPercent="33%"/>
+
+            <TextView
+                android:id="@+id/itemcorpstask_type3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/itemcorpstask_type2"
+                android:textSize="12sp"
+                app:layout_widthPercent="33%"/>
+
+            <TextView
+                android:id="@+id/itemcorpstask_type4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemcorpstask_type1"
+                android:layout_marginTop="2dp"
+                android:textSize="12sp"
+                app:layout_widthPercent="33%"/>
+
+            <TextView
+                android:id="@+id/itemcorpstask_type5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemcorpstask_type1"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/itemcorpstask_type4"
+                android:textSize="12sp"
+                app:layout_widthPercent="33%"/>
+        </android.support.percent.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/itemcorpstask_item4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemcorpstask_type_layout"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/itemcorpstask_line"
+            android:textColor="#A0A0A0"
+            android:textSize="10sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</LinearLayout>

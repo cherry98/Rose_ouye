@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background2"
+              android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/scantask_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.orange.oy.view.AppTitle>
+
+    <ScrollView
+        android:id="@+id/scantask_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/scantask_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="任务名称"
+                android:textColor="@color/dialogupload_title"
+                android:textSize="@dimen/app_textsize_normal2"/>
+
+            <TextView
+                android:id="@+id/scantask_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="任务说明"
+                android:textColor="#A0A0A0"
+                android:textSize="@dimen/task_desc_textsize"/>
+
+            <TextView
+                android:id="@+id/scantask_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/dialogupload_title"
+                android:textSize="@dimen/app_textsize_normal"/>
+
+            <com.orange.oy.view.MyListView
+                android:id="@+id/scantask_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10dp"
+                android:scrollbars="none"></com.orange.oy.view.MyListView>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/scantask_unscan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/dutyfree_background"
+        android:gravity="center"
+        android:textColor="@color/homepage_select"
+        android:textSize="@dimen/app_textsize_small"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/scantask_view"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/alltask_background"/>
+
+    <RelativeLayout
+        android:id="@+id/lin_alls"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/series_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/dialog_upload3"
+            android:text="连续扫码"
+            android:textColor="@color/homepage_select"
+            android:textSize="@dimen/app_textsize_normal1"/>
+
+        <ImageView
+            android:id="@+id/single_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/scan_tasknew"/>
+
+        <TextView
+            android:id="@+id/scan_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/dialog_upload3"
+            android:gravity="center"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:text="完成"
+            android:textColor="@color/homepage_select"
+            android:textSize="@dimen/app_textsize_normal1"/>
+    </RelativeLayout>
+</LinearLayout>
+

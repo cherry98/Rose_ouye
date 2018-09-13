@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#ffffffff"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical"
+              android:paddingBottom="20dp"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/task_question_edit_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:src="@mipmap/record_required"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/task_question_edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_textcolor"
+            android:textSize="@dimen/app_textsize_normal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/task_question_record"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/record_button"
+            android:visibility="visible"/>
+
+        <EditText
+            android:id="@+id/task_question_edit_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/questionradio_nos_bg"
+            android:hint="请输入答案"
+            android:lineSpacingExtra="5dp"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:textColor="#ffA0A0A0"
+            android:textSize="13sp"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/task_question_presstalk"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_talk_bg"
+            android:text="按住说话"
+            android:textColor="#ff231916"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/task_question_play"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_talk_bg"
+            android:gravity="center"
+            android:text="播放"
+            android:textColor="#ff231916"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/task_question_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="重做"
+            android:textColor="#ffF65D57"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/task_question_edit_sumbit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/makesure"
+        android:gravity="center"
+        android:text="下一题"
+        android:textColor="@color/makesure"
+        android:textSize="@dimen/app_textsize_big"
+        android:visibility="gone"/>
+</LinearLayout>

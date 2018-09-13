@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/app_background2"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/finish_task_bg1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/viewfdt_call_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/finish_task_bg_title"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/task_phone"/>
+
+            <TextView
+                android:id="@+id/viewfdt_call_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:textColor="#ff231916"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/viewfdt_call_reset"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/taskitemlist_button"
+                android:gravity="center"
+                android:text="重做"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/app_textsize_normal"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/viewfdt_call_right"
+                android:layout_width="14dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/text_spread"/>
+
+            <TextView
+                android:id="@+id/viewfdt_call_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/homepage_select"
+                android:textSize="@dimen/app_textsize_normal1"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/viewfdt_call_rate"
+            style="@style/ProgressBar_Mini"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:max="100"
+            android:progress="0"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/viewfdt_call_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#ffffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.orange.oy.view.RecodePlayView
+                android:id="@+id/viewfdt_call_recodeplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <!--<TextView-->
+            <!--android:id="@+id/viewfdt_call_name2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="47dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="网点名称"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/viewfdt_call_num"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="47dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="电话号码"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/viewfdt_call_time"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="47dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="拨号时间"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/viewfdt_call_calltime"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginLeft="47dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="拨号时长"/>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewfdt_call_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#ffffffff"
+            android:orientation="vertical"
+            android:paddingBottom="7dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingTop="7dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="未完成原因"
+                android:textColor="#ff231916"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/viewfdt_call_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffA0A0A0"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

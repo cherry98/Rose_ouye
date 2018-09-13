@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background2"
+    android:orientation="vertical">
+
+    <com.orange.oy.view.AppTitle
+        android:id="@+id/selectlocation_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mycorps_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投放类型"
+                    android:textColor="@color/homepage_city"
+                    android:textSize="@dimen/app_textsize_normal1" />
+
+                <RadioGroup
+                    android:id="@+id/selectlocation_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/selectlocation_button1"
+                        style="@style/task_question_radiobuttonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="准确位置"
+                        android:textColor="@color/homepage_notselect"
+                        android:textSize="@dimen/app_textsize_normal1"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/selectlocation_button2"
+                        style="@style/task_question_radiobuttonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="模糊位置"
+                        android:textColor="@color/homepage_notselect"
+                        android:textSize="@dimen/app_textsize_normal1" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/selectlocation_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/mycorps_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="位置地址"
+                        android:textColor="@color/homepage_city"
+                        android:textSize="@dimen/app_textsize_normal1" />
+
+                    <TextView
+                        android:id="@+id/selectlocation_clearinfo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:hint="请选择地址信息"
+                        android:textColor="@color/homepage_city"
+                        android:textColorHint="@color/homepage_notselect"
+                        android:textSize="@dimen/app_textsize_normal1" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="2dp"
+                        android:src="@mipmap/aboutus_ico3" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/selectlocation_vague"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/mycorps_line" />
+
+                <LinearLayout
+                    android:id="@+id/selectlocation_type_ly"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="场景类型"
+                        android:textColor="@color/homepage_city"
+                        android:textSize="@dimen/app_textsize_normal1" />
+
+                    <TextView
+                        android:id="@+id/selectlocation_type"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:hint="请选择场景类型"
+                        android:textColor="@color/homepage_notselect"
+                        android:textColorHint="@color/homepage_notselect"
+                        android:textSize="@dimen/app_textsize_normal1" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="2dp"
+                        android:src="@mipmap/aboutus_ico3" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/mycorps_line" />
+
+                <LinearLayout
+                    android:id="@+id/selectlocation_dist_ly"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="位置区域"
+                        android:textColor="@color/homepage_city"
+                        android:textSize="@dimen/app_textsize_normal1" />
+
+                    <TextView
+                        android:id="@+id/selectlocation_dist"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:hint="请选择位置区域"
+                        android:textColor="@color/homepage_notselect"
+                        android:textColorHint="@color/homepage_notselect"
+                        android:textSize="@dimen/app_textsize_normal1" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="2dp"
+                        android:src="@mipmap/aboutus_ico3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mycorps_line" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/selectlocation_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/identitysure"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/app_background2"
+        android:textSize="@dimen/app_textsize_normal2" />
+</LinearLayout>
